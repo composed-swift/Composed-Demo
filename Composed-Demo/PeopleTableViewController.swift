@@ -2,20 +2,13 @@ import UIKit
 import Composed
 import ComposedUI
 
-final class PeopleSection: ArraySection<String>, CollectionUIConfigurationProvider {
-
-    var collectionUIConfiguration: CollectionUIConfiguration {
-        return SectionCollectionUIConfiguration(section: self, prototype: PersonCollectionCell.fromNib, cellDequeueMethod: .nib, cellConfigurator: { cell, index, section in
-            let person = section.element(at: index)
-            cell.titleLabel.text = person
-        })
-    }
-
-}
-
 final class PeopleTableViewController: UITableViewController {
 
-    private lazy var dataSource: ComposedSectionProvider = {
+//    private lazy var coordinator: CollectionCoordinator = {
+//        return CollectionCoordinator(collectionView: collectionView, sectionProvider: <#T##SectionProvider#>)
+//    }()
+
+    private lazy var sectionProvider: ComposedSectionProvider = {
         let provider = ComposedSectionProvider()
         provider.append(family)
         provider.append(friends)
@@ -38,11 +31,11 @@ final class PeopleTableViewController: UITableViewController {
     }()
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return dataSource.numberOfSections
+        return sectionProvider.numberOfSections
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.numberOfElements(in: section)
+        return sectionProvider.numberOfElements(in: section)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -61,7 +54,7 @@ final class PeopleTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
-        return "\(dataSource.sections[section].numberOfElements) People"
+        return "\(sectionProvider.sections[section].numberOfElements) People"
     }
 
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60222E7A69A00CC9980 /* AppDelegate.swift */; };
 		542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60422E7A69A00CC9980 /* SceneDelegate.swift */; };
-		542BD60722E7A69A00CC9980 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60622E7A69A00CC9980 /* PeopleViewController.swift */; };
+		542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */; };
 		542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60822E7A69A00CC9980 /* Main.storyboard */; };
 		542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60B22E7A69B00CC9980 /* Assets.xcassets */; };
 		542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */; };
@@ -18,6 +18,7 @@
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */; };
 		5483B5BA22E7CCB800E4BF34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B922E7CCB800E4BF34 /* README.md */; };
+		5483B5BE22E7CF2500E4BF34 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */; };
 		54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +26,7 @@
 		542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composed-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542BD60222E7A69A00CC9980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542BD60422E7A69A00CC9980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		542BD60622E7A69A00CC9980 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewController.swift; sourceTree = "<group>"; };
 		542BD60922E7A69A00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		542BD60B22E7A69B00CC9980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +36,7 @@
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/README.md"; sourceTree = "<group>"; };
+		5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleSection.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleSection.swift"; sourceTree = "<group>"; };
 		54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleCollectionViewController.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleCollectionViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +78,8 @@
 			children = (
 				542BD60222E7A69A00CC9980 /* AppDelegate.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
-				542BD60622E7A69A00CC9980 /* PeopleViewController.swift */,
+				5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */,
+				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
 				54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */,
 				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
 				5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */,
@@ -173,9 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */,
-				542BD60722E7A69A00CC9980 /* PeopleViewController.swift in Sources */,
+				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
+				5483B5BE22E7CF2500E4BF34 /* PeopleSection.swift in Sources */,
 				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
