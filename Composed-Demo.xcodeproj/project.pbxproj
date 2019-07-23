@@ -3,27 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60222E7A69A00CC9980 /* AppDelegate.swift */; };
 		542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60422E7A69A00CC9980 /* SceneDelegate.swift */; };
-		542BD60722E7A69A00CC9980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60622E7A69A00CC9980 /* ViewController.swift */; };
+		542BD60722E7A69A00CC9980 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60622E7A69A00CC9980 /* PeopleViewController.swift */; };
 		542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60822E7A69A00CC9980 /* Main.storyboard */; };
 		542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60B22E7A69B00CC9980 /* Assets.xcassets */; };
 		542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */; };
+		542BD61922E7A71700CC9980 /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61822E7A71700CC9980 /* Composed */; };
+		542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61B22E7AD4900CC9980 /* ComposedUI */; };
+		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
+		5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */; };
+		54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composed-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542BD60222E7A69A00CC9980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542BD60422E7A69A00CC9980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		542BD60622E7A69A00CC9980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		542BD60622E7A69A00CC9980 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		542BD60922E7A69A00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		542BD60B22E7A69B00CC9980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		542BD61622E7A6A300CC9980 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = "../../../../../../../../Users/shaps/Projects/Composed Swift/Composed"; sourceTree = "<group>"; };
+		542BD61A22E7AD3D00CC9980 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
+		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
+		5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
+		54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleCollectionViewController.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleCollectionViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */,
+				542BD61922E7A71700CC9980 /* Composed in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +52,11 @@
 		542BD5F622E7A69A00CC9980 = {
 			isa = PBXGroup;
 			children = (
+				542BD61622E7A6A300CC9980 /* Composed */,
+				542BD61A22E7AD3D00CC9980 /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
+				542BD61722E7A71700CC9980 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +73,23 @@
 			children = (
 				542BD60222E7A69A00CC9980 /* AppDelegate.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
-				542BD60622E7A69A00CC9980 /* ViewController.swift */,
+				542BD60622E7A69A00CC9980 /* PeopleViewController.swift */,
+				54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */,
+				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
+				5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60B22E7A69B00CC9980 /* Assets.xcassets */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
 				542BD61022E7A69B00CC9980 /* Info.plist */,
 			);
 			path = "Composed-Demo";
+			sourceTree = "<group>";
+		};
+		542BD61722E7A71700CC9980 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +108,10 @@
 			dependencies = (
 			);
 			name = "Composed-Demo";
+			packageProductDependencies = (
+				542BD61822E7A71700CC9980 /* Composed */,
+				542BD61B22E7AD4900CC9980 /* ComposedUI */,
+			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -103,7 +132,7 @@
 				};
 			};
 			buildConfigurationList = 542BD5FA22E7A69A00CC9980 /* Build configuration list for PBXProject "Composed-Demo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */,
 				542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */,
 				542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */,
 				542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */,
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542BD60722E7A69A00CC9980 /* ViewController.swift in Sources */,
+				54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */,
+				542BD60722E7A69A00CC9980 /* PeopleViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
+				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +370,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		542BD61822E7A71700CC9980 /* Composed */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Composed;
+		};
+		542BD61B22E7AD4900CC9980 /* ComposedUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposedUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 542BD5F722E7A69A00CC9980 /* Project object */;
 }

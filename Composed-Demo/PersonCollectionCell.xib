@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="eJ7-lS-QHd" customClass="PersonCollectionCell" customModule="Composed_Demo">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YXs-dM-csi">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rob-Vk-9qL">
+                        <rect key="frame" x="16" y="8" width="370" height="20.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xE7-kE-vtp">
+                        <rect key="frame" x="16" y="49.5" width="378" height="0.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="separatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="0WY-5t-1Kt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xE7-kE-vtp" secondAttribute="bottom" id="0VQ-xx-SfA"/>
+                    <constraint firstAttribute="trailing" secondItem="Rob-Vk-9qL" secondAttribute="trailing" constant="8" id="5aC-eY-lf0"/>
+                    <constraint firstItem="Rob-Vk-9qL" firstAttribute="leading" secondItem="YXs-dM-csi" secondAttribute="leading" constant="16" id="9mL-Ly-XCt"/>
+                    <constraint firstItem="Rob-Vk-9qL" firstAttribute="top" secondItem="YXs-dM-csi" secondAttribute="top" constant="8" id="W3K-80-X5j"/>
+                    <constraint firstAttribute="trailing" secondItem="xE7-kE-vtp" secondAttribute="trailing" id="ZHH-Zt-aWK"/>
+                    <constraint firstAttribute="bottom" secondItem="Rob-Vk-9qL" secondAttribute="bottom" priority="999" constant="16" id="ohe-6T-Xno"/>
+                    <constraint firstItem="xE7-kE-vtp" firstAttribute="leading" secondItem="YXs-dM-csi" secondAttribute="leading" constant="16" id="tv2-NV-q3R"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="394" height="50"/>
+            <point key="canvasLocation" x="660.86956521739137" y="-101.11607142857143"/>
+        </collectionViewCell>
+    </objects>
+</document>
