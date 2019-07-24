@@ -10,7 +10,7 @@
         <!--Table-->
         <scene sceneID="HOv-j7-iRH">
             <objects>
-                <tableViewController id="3e1-Jw-HdU" customClass="PeopleViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="3e1-Jw-HdU" customClass="PeopleTableViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="28" id="d7p-TP-h0S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,7 +48,7 @@
         <!--Collection-->
         <scene sceneID="QO0-qc-XpF">
             <objects>
-                <collectionViewController id="9Pe-Dc-zBb" sceneMemberID="viewController">
+                <collectionViewController id="9Pe-Dc-zBb" customClass="PeopleCollectionViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="ia9-Kl-8OD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

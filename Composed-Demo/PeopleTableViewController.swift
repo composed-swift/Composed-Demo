@@ -30,21 +30,6 @@ final class PeopleTableViewController: UITableViewController {
         ])
     }()
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return sectionProvider.numberOfSections
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sectionProvider.numberOfElements(in: section)
-    }
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let person = indexPath.section == 0 ? family.element(at: indexPath.item) : friends.element(at: indexPath.item)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = person
-        return cell
-    }
-
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0: return "Family"
