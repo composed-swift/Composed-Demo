@@ -36,14 +36,13 @@ final class PeopleSection: ArraySection<String> {
 
 extension PeopleSection: TableSectionProvider {
 
-    // update header/footer to take an enum that's either a title or an element rather than a separate initializer
-
     func section(with environment: Environment) -> TableSection {
         if let section = tableSection { return section }
 
-        let section = TableSection(section: self, prototype: UITableViewCell(style: .default, reuseIdentifier: "UITableViewCell"), cellDequeueMethod: .class(UITableViewCell.self), cellConfigurator: { cell, index, section, _ in
+        let section = TableSection(section: self, cellDequeueMethod: .storyboard(UITableViewCell.self), cellReuseIdentifier: "Cell", cellConfigurator: { cell, index, section, _ in
             let person = section.element(at: index)
             cell.textLabel?.text = person
+            cell.detailTextLabel?.text = "12"
         }, header: .title(title))
 
         tableSection = section
@@ -57,7 +56,7 @@ extension PeopleSection: CollectionSectionProvider {
     func section(with environment: Environment) -> CollectionSection {
         if let section = collectionSection { return section }
 
-        let section = CollectionSectionFlowLayout(section: self, prototype: PersonCollectionCell.fromNib, cellDequeueMethod: .nib(PersonCollectionCell.self), cellConfigurator: { cell, index, section, context in
+        let section = CollectionSectionFlowLayout(section: self, cellDequeueMethod: .storyboard(PersonCollectionCell.self), cellReuseIdentifier: "PersonCell", cellConfigurator: { cell, index, section, context in
             let person = section.element(at: index)
             cell.titleLabel.text = person
 
