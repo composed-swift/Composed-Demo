@@ -17,6 +17,127 @@ final class People {
             "Francesco",
         ]))
 
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
         return provider
     }
 }
@@ -56,9 +177,18 @@ extension PeopleSection: CollectionSectionProvider {
     func section(with environment: Environment) -> CollectionSection {
         if let section = collectionSection { return section }
 
-        let section = CollectionSectionFlowLayout(section: self, cellDequeueMethod: .storyboard(PersonCollectionCell.self), cellReuseIdentifier: "PersonCell", cellConfigurator: { cell, index, section, context in
-            let person = section.element(at: index)
-            cell.titleLabel.text = person
+        let metrics = CollectionSectionMetrics(sectionInsets: .init(top: 20, left: 0, bottom: 20, right: 0),
+                                               minimumInteritemSpacing: 0, minimumLineSpacing: 0)
+
+        let strategy = ColumnCollectionSizingStrategy(columnCount: 1, sizingMode: .aspect(ratio: 1), metrics: metrics)
+
+        let section = CollectionSectionFlowLayout(section: self,
+                                                  sizingStrategy: strategy,
+                                                  cellDequeueMethod: .nib(PersonCollectionCell.self),
+                                                  cellReuseIdentifier: "PersonCell",
+                                                  cellConfigurator: { cell, index, section, context in
+                                                    let person = section.element(at: index)
+                                                    cell.titleLabel.text = person
         })
 
         collectionSection = section
