@@ -57,7 +57,7 @@
         <!--Table-->
         <scene sceneID="7yx-5w-cQf">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3tW-ay-m4s" customClass="NavigationController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3tW-ay-m4s" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Table" id="7xE-RD-yyE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CU8-ih-QVP">
@@ -163,7 +163,6 @@
                     <connections>
                         <segue destination="3tW-ay-m4s" kind="relationship" relationship="viewControllers" id="Lhw-Oh-vB2"/>
                         <segue destination="R0X-vd-UVJ" kind="relationship" relationship="viewControllers" id="DGP-Tj-Zga"/>
-                        <segue destination="9Pe-Dc-zBb" kind="relationship" relationship="viewControllers" id="P08-To-dLc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLF-85-bj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -173,7 +172,7 @@
         <!--Collection-->
         <scene sceneID="HdM-rN-FHV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0X-vd-UVJ" customClass="NavigationController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0X-vd-UVJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Collection" id="AzL-y1-R8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Xsw-b4-DBc">
@@ -190,7 +189,4 @@
             <point key="canvasLocation" x="1132" y="322"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="P08-To-dLc"/>
-    </inferredMetricsTieBreakers>
 </document>
