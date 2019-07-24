@@ -59,9 +59,7 @@ extension PeopleSection: CollectionSectionProvider {
         let section = CollectionSectionFlowLayout(section: self, cellDequeueMethod: .storyboard(PersonCollectionCell.self), cellReuseIdentifier: "PersonCell", cellConfigurator: { cell, index, section, context in
             let person = section.element(at: index)
             cell.titleLabel.text = person
-
-            guard context == .presentation else { return }
-        }, sectionInsets: UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0))
+        })
 
         collectionSection = section
         return section
