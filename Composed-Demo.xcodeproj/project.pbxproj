@@ -17,9 +17,9 @@
 		542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61B22E7AD4900CC9980 /* ComposedUI */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */; };
-		5483B5BA22E7CCB800E4BF34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B922E7CCB800E4BF34 /* README.md */; };
-		5483B5BE22E7CF2500E4BF34 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */; };
-		54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */; };
+		549ED08022F1BAE7003866D5 /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */; };
+		549ED08422F1BB3C003866D5 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ED08322F1BB3C003866D5 /* PeopleSection.swift */; };
+		549ED08622F1BB60003866D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 549ED08522F1BB60003866D5 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +31,13 @@
 		542BD60B22E7A69B00CC9980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		542BD61622E7A6A300CC9980 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = "../../../../../../../../Users/shaps/Projects/Composed Swift/Composed"; sourceTree = "<group>"; };
 		542BD61A22E7AD3D00CC9980 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
-		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/README.md"; sourceTree = "<group>"; };
-		5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleSection.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleSection.swift"; sourceTree = "<group>"; };
-		54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleCollectionViewController.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleCollectionViewController.swift"; sourceTree = "<group>"; };
+		549ED07E22F1BAB3003866D5 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
+		549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
+		549ED08322F1BB3C003866D5 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
+		549ED08522F1BB60003866D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +56,8 @@
 		542BD5F622E7A69A00CC9980 = {
 			isa = PBXGroup;
 			children = (
-				5483B5B922E7CCB800E4BF34 /* README.md */,
-				542BD61622E7A6A300CC9980 /* Composed */,
+				549ED08522F1BB60003866D5 /* README.md */,
+				549ED07E22F1BAB3003866D5 /* Composed */,
 				542BD61A22E7AD3D00CC9980 /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
@@ -78,9 +78,9 @@
 			children = (
 				542BD60222E7A69A00CC9980 /* AppDelegate.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
-				5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */,
+				549ED08322F1BB3C003866D5 /* PeopleSection.swift */,
 				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
-				54C7F7E822E7B59E0013A99A /* PeopleCollectionViewController.swift */,
+				549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */,
 				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
 				5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
@@ -162,7 +162,7 @@
 			files = (
 				5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */,
 				542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */,
-				5483B5BA22E7CCB800E4BF34 /* README.md in Resources */,
+				549ED08622F1BB60003866D5 /* README.md in Resources */,
 				542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */,
 				542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */,
 			);
@@ -175,11 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54C7F7E922E7B59E0013A99A /* PeopleCollectionViewController.swift in Sources */,
 				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
+				549ED08022F1BAE7003866D5 /* PeopleCollectionViewController.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
-				5483B5BE22E7CF2500E4BF34 /* PeopleSection.swift in Sources */,
+				549ED08422F1BB3C003866D5 /* PeopleSection.swift in Sources */,
 				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,7 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -310,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

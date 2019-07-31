@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Composed",
+        "repositoryURL": "https://github.com/composed-swift/composed",
+        "state": {
+          "branch": null,
+          "revision": "1fd75f71e0451bde741f1b1d1a0b786e83ac3079",
+          "version": "0.0.1"
+        }
+      },
+      {
         "package": "Nimble",
         "repositoryURL": "https://github.com/quick/nimble",
         "state": {
