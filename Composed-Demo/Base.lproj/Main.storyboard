@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33O-9h-pbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33O-9h-pbi">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--Table-->
         <scene sceneID="HOv-j7-iRH">
             <objects>
                 <tableViewController id="3e1-Jw-HdU" customClass="PeopleTableViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="28" id="d7p-TP-h0S">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" id="d7p-TP-h0S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -71,33 +70,6 @@
             </objects>
             <point key="canvasLocation" x="1131.8840579710145" y="-362.27678571428572"/>
         </scene>
-        <!--Collection-->
-        <scene sceneID="QO0-qc-XpF">
-            <objects>
-                <collectionViewController id="9Pe-Dc-zBb" customClass="PeopleCollectionViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="ia9-Kl-8OD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="systemGroupedBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="W6Q-Sa-QLa">
-                            <size key="itemSize" width="414" height="41"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
-                        </collectionViewFlowLayout>
-                        <cells/>
-                        <connections>
-                            <outlet property="dataSource" destination="9Pe-Dc-zBb" id="ZOE-i8-in8"/>
-                            <outlet property="delegate" destination="9Pe-Dc-zBb" id="FHa-zP-cMP"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="d6u-90-zXC"/>
-                    <navigationItem key="navigationItem" title="Collection" id="1ZM-qw-NNr"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2tN-mh-xUY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1900.0000000000002" y="320.75892857142856"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eNz-sX-QAc">
             <objects>
@@ -129,12 +101,33 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="9Pe-Dc-zBb" kind="relationship" relationship="rootViewController" id="jO6-gL-lu9"/>
+                        <segue destination="idE-U5-zVj" kind="relationship" relationship="rootViewController" id="wuo-Aj-42Z"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPZ-2T-6SK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="322"/>
+        </scene>
+        <!--Collection-->
+        <scene sceneID="NFY-dc-JCm">
+            <objects>
+                <collectionViewController id="idE-U5-zVj" customClass="PeopleCollectionViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KFb-mu-0nM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewLayout key="collectionViewLayout" id="liM-8a-iDi" customClass="FlowLayout" customModule="FlowLayout"/>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="idE-U5-zVj" id="Amr-xS-2HS"/>
+                            <outlet property="delegate" destination="idE-U5-zVj" id="ysn-JQ-9ga"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Collection" largeTitleDisplayMode="always" id="y2M-Io-lvz"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Boz-GD-hDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="321"/>
         </scene>
     </scenes>
 </document>

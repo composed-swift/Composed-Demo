@@ -28,8 +28,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="secondarySystemFillColor"/>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-Vo-4Dt">
-                        <rect key="frame" x="20" y="10" width="42" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-Vo-4Dt">
+                        <rect key="frame" x="20" y="10" width="374" height="20.5"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -45,7 +45,7 @@
                 <constraints>
                     <constraint firstItem="hBh-Vo-4Dt" firstAttribute="top" secondItem="E8q-j1-mei" secondAttribute="top" constant="10" id="Cdf-OU-gdH"/>
                     <constraint firstItem="Lwi-1L-rDG" firstAttribute="leading" secondItem="ro4-hC-h7F" secondAttribute="leading" constant="20" id="FJT-XF-NVO"/>
-                    <constraint firstItem="ro4-hC-h7F" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hBh-Vo-4Dt" secondAttribute="trailing" constant="20" id="Pkx-5i-aMg"/>
+                    <constraint firstItem="ro4-hC-h7F" firstAttribute="trailing" secondItem="hBh-Vo-4Dt" secondAttribute="trailing" constant="20" id="Pkx-5i-aMg"/>
                     <constraint firstItem="hBh-Vo-4Dt" firstAttribute="leading" secondItem="ro4-hC-h7F" secondAttribute="leading" constant="20" id="QaG-zS-Q4D"/>
                     <constraint firstAttribute="bottom" secondItem="Lwi-1L-rDG" secondAttribute="bottom" id="Sbq-9h-Dam"/>
                     <constraint firstAttribute="trailing" secondItem="Lwi-1L-rDG" secondAttribute="trailing" id="UaS-qI-etL"/>

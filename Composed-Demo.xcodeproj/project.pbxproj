@@ -16,6 +16,7 @@
 		542BD61922E7A71700CC9980 /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61822E7A71700CC9980 /* Composed */; };
 		542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61B22E7AD4900CC9980 /* ComposedUI */; };
 		542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */; };
+		5449792A22F0F8D900C09BD1 /* FlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 5449792922F0F8D900C09BD1 /* FlowLayout */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		5483B5BA22E7CCB800E4BF34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B922E7CCB800E4BF34 /* README.md */; };
 		5483B5BE22E7CF2500E4BF34 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */; };
@@ -34,6 +35,7 @@
 		542BD61622E7A6A300CC9980 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = "../../../../../../../../Users/shaps/Projects/Composed Swift/Composed"; sourceTree = "<group>"; };
 		542BD61A22E7AD3D00CC9980 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PersonCollectionCell.xib; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PersonCollectionCell.xib"; sourceTree = "<group>"; };
+		5449792822F0F8BD00C09BD1 /* FlowLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FlowLayout; path = ../../FlowLayout; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/README.md"; sourceTree = "<group>"; };
 		5483B5BB22E7CE4900E4BF34 /* PeopleSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PeopleSection.swift; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PeopleSection.swift"; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			files = (
 				542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */,
 				542BD61922E7A71700CC9980 /* Composed in Frameworks */,
+				5449792A22F0F8D900C09BD1 /* FlowLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
+				5449792822F0F8BD00C09BD1 /* FlowLayout */,
 				542BD61622E7A6A300CC9980 /* Composed */,
 				542BD61A22E7AD3D00CC9980 /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
@@ -117,6 +121,7 @@
 			packageProductDependencies = (
 				542BD61822E7A71700CC9980 /* Composed */,
 				542BD61B22E7AD4900CC9980 /* ComposedUI */,
+				5449792922F0F8D900C09BD1 /* FlowLayout */,
 			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
@@ -387,6 +392,10 @@
 		542BD61B22E7AD4900CC9980 /* ComposedUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ComposedUI;
+		};
+		5449792922F0F8D900C09BD1 /* FlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FlowLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
