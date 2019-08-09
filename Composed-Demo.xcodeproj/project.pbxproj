@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,13 +13,9 @@
 		542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60822E7A69A00CC9980 /* Main.storyboard */; };
 		542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60B22E7A69B00CC9980 /* Assets.xcassets */; };
 		542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */; };
-		542BD61922E7A71700CC9980 /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61822E7A71700CC9980 /* Composed */; };
-		542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 542BD61B22E7AD4900CC9980 /* ComposedUI */; };
+		542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
-		5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */; };
-		549ED08022F1BAE7003866D5 /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */; };
-		549ED08422F1BB3C003866D5 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ED08322F1BB3C003866D5 /* PeopleSection.swift */; };
-		549ED08622F1BB60003866D5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 549ED08522F1BB60003866D5 /* README.md */; };
+		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,13 +27,11 @@
 		542BD60B22E7A69B00CC9980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		542BD61A22E7AD3D00CC9980 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
+		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PersonCollectionCell.xib; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PersonCollectionCell.xib"; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
-		5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
-		549ED07E22F1BAB3003866D5 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
-		549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
-		549ED08322F1BB3C003866D5 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
-		549ED08522F1BB60003866D5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/README.md"; sourceTree = "<group>"; };
+		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
+		54BF82E222F1C64E00D50991 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				542BD61C22E7AD4900CC9980 /* ComposedUI in Frameworks */,
-				542BD61922E7A71700CC9980 /* Composed in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,9 +48,8 @@
 		542BD5F622E7A69A00CC9980 = {
 			isa = PBXGroup;
 			children = (
-				549ED08522F1BB60003866D5 /* README.md */,
-				549ED07E22F1BAB3003866D5 /* Composed */,
-				542BD61A22E7AD3D00CC9980 /* ComposedUI */,
+				5483B5B922E7CCB800E4BF34 /* README.md */,
+				54BF82E222F1C64E00D50991 /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -77,12 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				542BD60222E7A69A00CC9980 /* AppDelegate.swift */,
+				54BF82E022F1C5DB00D50991 /* PeopleSection.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
-				549ED08322F1BB3C003866D5 /* PeopleSection.swift */,
 				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
-				549ED07F22F1BAE7003866D5 /* PeopleCollectionViewController.swift */,
 				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
-				5483B5B622E7C7C400E4BF34 /* PersonCollectionCell.xib */,
+				542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60B22E7A69B00CC9980 /* Assets.xcassets */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
@@ -115,8 +105,6 @@
 			);
 			name = "Composed-Demo";
 			packageProductDependencies = (
-				542BD61822E7A71700CC9980 /* Composed */,
-				542BD61B22E7AD4900CC9980 /* ComposedUI */,
 			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
@@ -160,10 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5483B5B822E7C7C400E4BF34 /* PersonCollectionCell.xib in Resources */,
 				542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */,
-				549ED08622F1BB60003866D5 /* README.md in Resources */,
 				542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */,
+				542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */,
 				542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,11 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */,
 				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
-				549ED08022F1BAE7003866D5 /* PeopleCollectionViewController.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
-				549ED08422F1BB3C003866D5 /* PeopleSection.swift in Sources */,
 				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,17 +364,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		542BD61822E7A71700CC9980 /* Composed */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Composed;
-		};
-		542BD61B22E7AD4900CC9980 /* ComposedUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ComposedUI;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 542BD5F722E7A69A00CC9980 /* Project object */;
 }

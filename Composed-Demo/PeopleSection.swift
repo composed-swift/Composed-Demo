@@ -19,6 +19,127 @@ final class People {
             ]))
         }
 
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
+        provider.append(PeopleSection(title: "Family", elements: [
+            "Anne",
+            "Shaps",
+            "Anton",
+        ]))
+
+        provider.append(PeopleSection(title: "Friends", elements: [
+            "Joseph",
+            "Francesco",
+        ]))
+
         return provider
     }
 }
@@ -36,12 +157,14 @@ final class PeopleSection: ArraySection<String> {
 
 extension PeopleSection: TableSectionProvider {
 
-    // update header/footer to take an enum that's either a title or an element rather than a separate initializer
-
-    var tableSection: TableSection {
-        return TableSection(section: self, prototype: UITableViewCell(style: .default, reuseIdentifier: "UITableViewCell"), cellDequeueMethod: .class, cellConfigurator: { cell, index, section, _ in
-            let person = section.element(at: index)
-            cell.textLabel?.text = person
+    func section(with environment: Environment) -> TableSection {
+        return TableSection(section: self,
+                            cellDequeueMethod: .storyboard(UITableViewCell.self),
+                            cellReuseIdentifier: "Cell",
+                            cellConfigurator: { cell, index, section, _ in
+                                let person = section.element(at: index)
+                                cell.textLabel?.text = person
+                                cell.detailTextLabel?.text = "12"
         }, header: .title(title))
     }
 
@@ -49,10 +172,19 @@ extension PeopleSection: TableSectionProvider {
 
 extension PeopleSection: CollectionSectionProvider {
 
-    var collectionSection: CollectionSection {
-        return CollectionSection(section: self, prototype: PersonCollectionCell.fromNib, cellDequeueMethod: .nib, cellConfigurator: { cell, index, section, context in
-            let person = section.element(at: index)
-            cell.titleLabel.text = person
+    func section(with environment: Environment) -> CollectionSection {
+        let metrics = CollectionSectionMetrics(sectionInsets: .init(top: 20, left: 0, bottom: 20, right: 0),
+                                               minimumInteritemSpacing: 0, minimumLineSpacing: 0)
+
+        let strategy = ColumnCollectionSizingStrategy(columnCount: 1, sizingMode: .automatic(isUniform: false), metrics: metrics)
+        
+        return CollectionSectionFlowLayout(section: self,
+                                           sizingStrategy: strategy,
+                                           cellDequeueMethod: .nib(PersonCollectionCell.self),
+                                           cellReuseIdentifier: "PersonCell",
+                                           cellConfigurator: { cell, index, section, context in
+                                            let person = section.element(at: index)
+                                            cell.titleLabel.text = person
         })
     }
 
