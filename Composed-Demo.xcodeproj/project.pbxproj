@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,9 @@
 		542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
+		54F68E99231098A600C0319E /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 54F68E98231098A600C0319E /* ComposedUI */; };
+		54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */; };
+		54F68E9E23109BF600C0319E /* FlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 54F68E9D23109BF600C0319E /* FlowLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,11 +30,11 @@
 		542BD60B22E7A69B00CC9980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PersonCollectionCell.xib; path = "../../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/Composed-Demo/PersonCollectionCell.xib"; sourceTree = "<group>"; };
+		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
-		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../../../../System/Volumes/Data/Users/shaps/Projects/Composed Swift/Composed-Demo/README.md"; sourceTree = "<group>"; };
+		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
-		54BF82E222F1C64E00D50991 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
+		54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F68E9E23109BF600C0319E /* FlowLayout in Frameworks */,
+				54F68E99231098A600C0319E /* ComposedUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
-				54BF82E222F1C64E00D50991 /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -71,6 +75,7 @@
 				54BF82E022F1C5DB00D50991 /* PeopleSection.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
 				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
+				54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */,
 				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
 				542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
@@ -105,6 +110,8 @@
 			);
 			name = "Composed-Demo";
 			packageProductDependencies = (
+				54F68E98231098A600C0319E /* ComposedUI */,
+				54F68E9D23109BF600C0319E /* FlowLayout */,
 			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
@@ -134,6 +141,10 @@
 				Base,
 			);
 			mainGroup = 542BD5F622E7A69A00CC9980;
+			packageReferences = (
+				54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */,
+				54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */,
+			);
 			productRefGroup = 542BD60022E7A69A00CC9980 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */,
+				54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */,
 				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
@@ -364,6 +376,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:shaps80/FlowLayout.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54F68E98231098A600C0319E /* ComposedUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */;
+			productName = ComposedUI;
+		};
+		54F68E9D23109BF600C0319E /* FlowLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */;
+			productName = FlowLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 542BD5F722E7A69A00CC9980 /* Project object */;
 }

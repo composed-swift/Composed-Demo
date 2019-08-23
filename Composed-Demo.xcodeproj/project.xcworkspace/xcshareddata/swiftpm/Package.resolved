@@ -11,6 +11,24 @@
         }
       },
       {
+        "package": "ComposedUI",
+        "repositoryURL": "git@github.com:composed-swift/ComposedUI.git",
+        "state": {
+          "branch": "master",
+          "revision": "8887d9c5a7440c17bb8f127d19174daf88e09e09",
+          "version": null
+        }
+      },
+      {
+        "package": "FlowLayout",
+        "repositoryURL": "git@github.com:shaps80/FlowLayout.git",
+        "state": {
+          "branch": "master",
+          "revision": "88766cd84246481c665d410f01182da31f7296f3",
+          "version": null
+        }
+      },
+      {
         "package": "Nimble",
         "repositoryURL": "https://github.com/quick/nimble",
         "state": {
