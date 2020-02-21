@@ -10,6 +10,7 @@ final class PeopleCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: People.provider)
+        collectionView.backgroundColor = .groupTableViewBackground
     }
     
 }
