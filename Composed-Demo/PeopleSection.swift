@@ -5,12 +5,12 @@ import ComposedLayouts
 
 final class PeopleSection: ArraySection<String> {
 
-    let title: String
+    private var title: String = ""
     private let prototype = PersonCollectionCell.fromNib
 
-    init(title: String, elements: [String]) {
+    convenience init(title: String, elements: [String]) {
+        self.init(elements)
         self.title = title
-        super.init(elements: elements)
     }
 
 }
