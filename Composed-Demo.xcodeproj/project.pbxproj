@@ -78,8 +78,8 @@
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
 				543D9F312417D9C3008A4F36 /* Composed */,
-				543D9F302417D9C3008A4F36 /* ComposedLayouts */,
 				543D9F2F2417D9C3008A4F36 /* ComposedUI */,
+				543D9F302417D9C3008A4F36 /* ComposedLayouts */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -98,9 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				54E7FA7D2417E04E00CB842B /* Core */,
+				54E7FA7A2417E03100CB842B /* Sections */,
 				54E7FA7C2417E03E00CB842B /* TableView */,
 				54E7FA7B2417E03800CB842B /* CollectionView */,
-				54E7FA7A2417E03100CB842B /* Sections */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
 				542BD61022E7A69B00CC9980 /* Info.plist */,
