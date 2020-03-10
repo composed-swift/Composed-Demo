@@ -32,16 +32,19 @@ extension PeopleSection {
         cell.titleLabel.text = person.name
         cell.person = person
 
-        cell.insertionHandler = { [unowned self] person in
+        cell.insertionHandler = { [weak self] person in
+            guard let self = self else { return }
             let index = person.flatMap { self.firstIndex(of: $0) } ?? index
             self.insert(Person(name: Lorem.fullName), at: index + 1)
         }
 
-        cell.deletionHandler = { [unowned self] person in
+        cell.deletionHandler = { [weak self] person in
+            guard let self = self else { return }
             if self.count == 1 {
                 self.parent?.remove(self)
             } else {
-                self.remove(at: person.flatMap { self.firstIndex(of: $0) } ?? index)
+                guard let index = person.flatMap({ self.firstIndex(of: $0) }) else { return }
+                self.remove(at: index)
             }
         }
     }
