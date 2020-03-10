@@ -21,6 +21,7 @@
 		542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */; };
 		54608252240004870000C54E /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 54608251240004870000C54E /* Composed */; };
 		54608258240004FA0000C54E /* ComposedLayouts in Frameworks */ = {isa = PBXBuildFile; productRef = 54608257240004FA0000C54E /* ComposedLayouts */; };
+		546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546568E32417F282003FEF70 /* PeopleStackViewController.swift */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
 		54E7FA7F2417E0A700CB842B /* PeopleSection+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E7FA7E2417E0A700CB842B /* PeopleSection+Collection.swift */; };
@@ -49,6 +50,7 @@
 		543D9F2F2417D9C3008A4F36 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = "../Composed Swift/ComposedUI"; sourceTree = "<group>"; };
 		543D9F302417D9C3008A4F36 /* ComposedLayouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedLayouts; path = "../Composed Swift/ComposedLayouts"; sourceTree = "<group>"; };
 		543D9F312417D9C3008A4F36 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = "../Composed Swift/Composed"; sourceTree = "<group>"; };
+		546568E32417F282003FEF70 /* PeopleStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStackViewController.swift; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
@@ -99,8 +101,9 @@
 			children = (
 				54E7FA7D2417E04E00CB842B /* Core */,
 				54E7FA7A2417E03100CB842B /* Sections */,
-				54E7FA7C2417E03E00CB842B /* TableView */,
-				54E7FA7B2417E03800CB842B /* CollectionView */,
+				54E7FA7C2417E03E00CB842B /* Table */,
+				54E7FA7B2417E03800CB842B /* Collection */,
+				546568E22417F264003FEF70 /* Stack */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
 				542BD61022E7A69B00CC9980 /* Info.plist */,
@@ -116,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		546568E22417F264003FEF70 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				546568E32417F282003FEF70 /* PeopleStackViewController.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		54E7FA7A2417E03100CB842B /* Sections */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,7 +138,7 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
-		54E7FA7B2417E03800CB842B /* CollectionView */ = {
+		54E7FA7B2417E03800CB842B /* Collection */ = {
 			isa = PBXGroup;
 			children = (
 				54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */,
@@ -135,17 +146,17 @@
 				5429B1A22401863100B7159B /* PersonCollectionHeader.xib */,
 				542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */,
 			);
-			path = CollectionView;
+			path = Collection;
 			sourceTree = "<group>";
 		};
-		54E7FA7C2417E03E00CB842B /* TableView */ = {
+		54E7FA7C2417E03E00CB842B /* Table */ = {
 			isa = PBXGroup;
 			children = (
 				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
 				5429B1A62401901800B7159B /* PersonTableCell.swift */,
 				5429B1AA240192CF00B7159B /* PersonTableHeader.xib */,
 			);
-			path = TableView;
+			path = Table;
 			sourceTree = "<group>";
 		};
 		54E7FA7D2417E04E00CB842B /* Core */ = {
@@ -246,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */,
+				546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */,
 				5429B1A124017E1B00B7159B /* PeopleViewController.swift in Sources */,
 				54E7FA812417E0B000CB842B /* PeopleSection+Table.swift in Sources */,
 				54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */,

@@ -144,7 +144,7 @@
         <scene sceneID="HdM-rN-FHV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0X-vd-UVJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" image="rectangle.split.3x1" catalog="system" id="AzL-y1-R8J"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="flowchart" id="AzL-y1-R8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Xsw-b4-DBc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -208,13 +208,13 @@
         <scene sceneID="U0G-kp-pnM">
             <objects>
                 <viewController id="UtT-fp-lIg" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" id="rEJ-Mh-6WU">
+                    <scrollView key="view" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" id="rEJ-Mh-6WU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="1q6-Rr-50B"/>
-                        <viewLayoutGuide key="contentLayoutGuide" id="efQ-2a-WJ8"/>
-                        <viewLayoutGuide key="frameLayoutGuide" id="qoU-p4-qYG"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="giT-3N-PmS"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="IY0-QR-U6a"/>
                     </scrollView>
                     <navigationItem key="navigationItem" title="Stack" id="VU8-Ur-N94">
                         <barButtonItem key="leftBarButtonItem" title="Remove Section" id="NkQ-nI-7y0">
@@ -238,7 +238,7 @@
         <scene sceneID="qZe-Io-R07">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hfd-ya-oNV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stack" image="flowchart" catalog="system" id="uhh-ct-yjQ"/>
+                    <tabBarItem key="tabBarItem" title="Stack" image="flowchart" id="uhh-ct-yjQ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Bm-Nz-dp3">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -255,10 +255,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flowchart" catalog="system" width="64" height="64"/>
+        <image name="flowchart" width="64" height="64"/>
         <image name="minus.circle" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
-        <image name="rectangle.split.3x1" catalog="system" width="64" height="46"/>
         <image name="table" catalog="system" width="64" height="46"/>
     </resources>
 </document>
