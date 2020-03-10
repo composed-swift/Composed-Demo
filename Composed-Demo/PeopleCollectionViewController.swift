@@ -1,15 +1,15 @@
 import UIKit
 import Composed
 import ComposedUI
-import FlowLayout
 
-final class PeopleCollectionViewController: UICollectionViewController {
+final class PeopleCollectionViewController: PeopleViewController {
 
+    @IBOutlet private weak var collectionView: UICollectionView!
     private var coordinator: CollectionCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: People.provider)
+        coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: provider)
     }
     
 }

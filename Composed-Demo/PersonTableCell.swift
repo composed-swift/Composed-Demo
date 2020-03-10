@@ -1,8 +1,9 @@
 import UIKit
 import ComposedUI
 
-final class PersonCollectionHeader: UICollectionReusableView, NibLoadable {
+final class PersonTableHeader: UITableViewHeaderFooterView, NibLoadable {
     @IBOutlet weak var titleLabel: UILabel!
+
     var person: Person?
     
     var insertionHandler: ((Person?) -> Void)?
@@ -17,8 +18,10 @@ final class PersonCollectionHeader: UICollectionReusableView, NibLoadable {
     }
 }
 
-final class PersonCollectionCell: UICollectionViewCell, NibLoadable {
+final class PersonTableCell: UITableViewCell {
+
     @IBOutlet weak var titleLabel: UILabel!
+
     var person: Person?
 
     var insertionHandler: ((Person?) -> Void)?
@@ -31,4 +34,5 @@ final class PersonCollectionCell: UICollectionViewCell, NibLoadable {
     @IBAction private func handleDelete(_ button: UIButton) {
         deletionHandler?(person)
     }
+
 }

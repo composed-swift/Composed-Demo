@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5429B19F24017BC100B7159B /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5429B19E24017BC100B7159B /* Lorem.swift */; };
+		5429B1A124017E1B00B7159B /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5429B1A024017E1B00B7159B /* PeopleViewController.swift */; };
+		5429B1A32401863100B7159B /* PersonCollectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5429B1A22401863100B7159B /* PersonCollectionHeader.xib */; };
+		5429B1A72401901800B7159B /* PersonTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5429B1A62401901800B7159B /* PersonTableCell.swift */; };
+		5429B1AB240192CF00B7159B /* PersonTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5429B1AA240192CF00B7159B /* PersonTableHeader.xib */; };
 		542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60222E7A69A00CC9980 /* AppDelegate.swift */; };
 		542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60422E7A69A00CC9980 /* SceneDelegate.swift */; };
 		542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */; };
@@ -14,6 +19,8 @@
 		542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60B22E7A69B00CC9980 /* Assets.xcassets */; };
 		542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */; };
 		542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */; };
+		54608252240004870000C54E /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 54608251240004870000C54E /* Composed */; };
+		54608258240004FA0000C54E /* ComposedLayouts in Frameworks */ = {isa = PBXBuildFile; productRef = 54608257240004FA0000C54E /* ComposedLayouts */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
 		54F68E99231098A600C0319E /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 54F68E98231098A600C0319E /* ComposedUI */; };
@@ -22,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5429B19E24017BC100B7159B /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		5429B1A024017E1B00B7159B /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		5429B1A22401863100B7159B /* PersonCollectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionHeader.xib; sourceTree = "<group>"; };
+		5429B1A62401901800B7159B /* PersonTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableCell.swift; sourceTree = "<group>"; };
+		5429B1AA240192CF00B7159B /* PersonTableHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableHeader.xib; sourceTree = "<group>"; };
 		542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Composed-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		542BD60222E7A69A00CC9980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		542BD60422E7A69A00CC9980 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +43,9 @@
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
+		54608253240004CB0000C54E /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
+		54608254240004CB0000C54E /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
+		54608255240004CB0000C54E /* ComposedLayouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedLayouts; path = ../ComposedLayouts; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
@@ -44,6 +59,8 @@
 			files = (
 				54F68E9E23109BF600C0319E /* FlowLayout in Frameworks */,
 				54F68E99231098A600C0319E /* ComposedUI in Frameworks */,
+				54608258240004FA0000C54E /* ComposedLayouts in Frameworks */,
+				54608252240004870000C54E /* Composed in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +71,9 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
+				54608254240004CB0000C54E /* Composed */,
+				54608255240004CB0000C54E /* ComposedLayouts */,
+				54608253240004CB0000C54E /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -74,14 +94,19 @@
 				542BD60222E7A69A00CC9980 /* AppDelegate.swift */,
 				54BF82E022F1C5DB00D50991 /* PeopleSection.swift */,
 				542BD60422E7A69A00CC9980 /* SceneDelegate.swift */,
+				5429B1A024017E1B00B7159B /* PeopleViewController.swift */,
 				542BD60622E7A69A00CC9980 /* PeopleTableViewController.swift */,
+				5429B1A62401901800B7159B /* PersonTableCell.swift */,
+				5429B1AA240192CF00B7159B /* PersonTableHeader.xib */,
 				54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */,
 				5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */,
+				5429B1A22401863100B7159B /* PersonCollectionHeader.xib */,
 				542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60B22E7A69B00CC9980 /* Assets.xcassets */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
 				542BD61022E7A69B00CC9980 /* Info.plist */,
+				5429B19E24017BC100B7159B /* Lorem.swift */,
 			);
 			path = "Composed-Demo";
 			sourceTree = "<group>";
@@ -112,6 +137,8 @@
 			packageProductDependencies = (
 				54F68E98231098A600C0319E /* ComposedUI */,
 				54F68E9D23109BF600C0319E /* FlowLayout */,
+				54608251240004870000C54E /* Composed */,
+				54608257240004FA0000C54E /* ComposedLayouts */,
 			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
@@ -144,6 +171,8 @@
 			packageReferences = (
 				54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */,
 				54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */,
+				54608250240004870000C54E /* XCRemoteSwiftPackageReference "Composed" */,
+				54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */,
 			);
 			productRefGroup = 542BD60022E7A69A00CC9980 /* Products */;
 			projectDirPath = "";
@@ -161,7 +190,9 @@
 			files = (
 				542BD60F22E7A69B00CC9980 /* LaunchScreen.storyboard in Resources */,
 				542BD60C22E7A69B00CC9980 /* Assets.xcassets in Resources */,
+				5429B1AB240192CF00B7159B /* PersonTableHeader.xib in Resources */,
 				542BFF0022E8963100ECFE9E /* PersonCollectionCell.xib in Resources */,
+				5429B1A32401863100B7159B /* PersonCollectionHeader.xib in Resources */,
 				542BD60A22E7A69A00CC9980 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,10 +205,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */,
+				5429B1A124017E1B00B7159B /* PeopleViewController.swift in Sources */,
 				54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */,
 				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
+				5429B1A72401901800B7159B /* PersonTableCell.swift in Sources */,
+				5429B19F24017BC100B7159B /* Lorem.swift in Sources */,
 				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,6 +359,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Composed-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -343,6 +378,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Composed-Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,6 +414,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		54608250240004870000C54E /* XCRemoteSwiftPackageReference "Composed" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/composed-swift/Composed.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/composed-swift/ComposedLayouts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
@@ -397,6 +449,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		54608251240004870000C54E /* Composed */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54608250240004870000C54E /* XCRemoteSwiftPackageReference "Composed" */;
+			productName = Composed;
+		};
+		54608257240004FA0000C54E /* ComposedLayouts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */;
+			productName = ComposedLayouts;
+		};
 		54F68E98231098A600C0319E /* ComposedUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */;
