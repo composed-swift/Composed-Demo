@@ -11,5 +11,5 @@ final class PeopleCollectionViewController: PeopleViewController {
         super.viewDidLoad()
         coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: provider)
     }
-    
+
 }

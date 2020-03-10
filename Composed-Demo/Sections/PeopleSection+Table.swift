@@ -1,0 +1,26 @@
+import UIKit
+import Composed
+import ComposedUI
+
+extension PeopleSection: TableSectionProvider {
+
+    func section(with traitCollection: UITraitCollection) -> TableSection {
+        let header = TableElement(section: self, dequeueMethod: .nib(PersonTableHeader.self)) { view, _, section in
+            section.prepare(header: view)
+        }
+
+        let cell = TableElement(section: self, dequeueMethod: .storyboard(PersonTableCell.self), reuseIdentifier: "Cell") { cell, index, section in
+            section.prepare(cell: cell, at: index)
+        }
+
+        return TableSection(section: self, cell: cell, header: .element(header))
+    }
+
+}
+
+extension PeopleSection: TableEditingHandler {
+    func allowsEditing(at index: Int) -> Bool { return true }
+    func editingStyle(at index: Int) -> UITableViewCell.EditingStyle { return .delete }
+    func commitEditing(at index: Int, editingStyle: UITableViewCell.EditingStyle) { remove(at: index) }
+}
+

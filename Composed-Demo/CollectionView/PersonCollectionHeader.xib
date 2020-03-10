@@ -46,16 +46,16 @@
                 </label>
             </subviews>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="F5S-V0-rdk" secondAttribute="trailing" id="6D5-78-kvT"/>
                 <constraint firstItem="BTw-Fj-fA6" firstAttribute="top" secondItem="05V-3B-IEY" secondAttribute="top" id="ALB-Xe-gVX"/>
                 <constraint firstItem="F5S-V0-rdk" firstAttribute="leading" secondItem="ZY4-ru-1a2" secondAttribute="trailing" id="GB0-jb-7q2"/>
                 <constraint firstItem="ZY4-ru-1a2" firstAttribute="leading" secondItem="BTw-Fj-fA6" secondAttribute="trailing" id="MXS-DB-3GL"/>
                 <constraint firstAttribute="bottom" secondItem="ZY4-ru-1a2" secondAttribute="bottom" priority="999" constant="12" id="NlW-0v-i71"/>
+                <constraint firstItem="BTw-Fj-fA6" firstAttribute="leading" secondItem="1SO-1M-tA6" secondAttribute="leading" id="Pkr-te-kpG"/>
                 <constraint firstAttribute="bottom" secondItem="F5S-V0-rdk" secondAttribute="bottom" priority="999" id="WaQ-Jh-mEb"/>
                 <constraint firstItem="ZY4-ru-1a2" firstAttribute="top" secondItem="05V-3B-IEY" secondAttribute="top" constant="12" id="Zxi-7C-ccv"/>
                 <constraint firstAttribute="bottom" secondItem="BTw-Fj-fA6" secondAttribute="bottom" priority="999" id="ahw-Dc-3qN"/>
                 <constraint firstItem="F5S-V0-rdk" firstAttribute="top" secondItem="05V-3B-IEY" secondAttribute="top" id="pFB-pp-bE9"/>
-                <constraint firstItem="BTw-Fj-fA6" firstAttribute="leading" secondItem="05V-3B-IEY" secondAttribute="leading" id="rUQ-cE-C6x"/>
+                <constraint firstItem="1SO-1M-tA6" firstAttribute="trailing" secondItem="F5S-V0-rdk" secondAttribute="trailing" id="yzf-IN-yfW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="1SO-1M-tA6"/>
             <connections>

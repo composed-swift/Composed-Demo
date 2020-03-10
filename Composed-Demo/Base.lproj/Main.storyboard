@@ -67,6 +67,12 @@
                         <viewLayoutGuide key="safeArea" id="aH2-W6-Wal"/>
                     </view>
                     <navigationItem key="navigationItem" title="Table" id="Ttj-1W-x31">
+                        <barButtonItem key="leftBarButtonItem" title="Remove Section" id="A5R-1O-Fo4">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="removeSection" destination="XpE-RB-yHt" id="ybc-y6-OEk"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Section" id="McK-NA-poM">
                             <connections>
                                 <action selector="appendSection" destination="XpE-RB-yHt" id="36A-2S-lSc"/>
@@ -163,6 +169,12 @@
                         <viewLayoutGuide key="safeArea" id="yN2-Ke-mN4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Collection" id="xmY-vb-uIY">
+                        <barButtonItem key="leftBarButtonItem" title="Remove Section" id="b5E-FZ-BsG">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="removeSection" destination="hEO-Cj-rAH" id="x4q-1o-M9r"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Section" id="AnS-tY-uSr">
                             <connections>
                                 <action selector="appendSection" destination="hEO-Cj-rAH" id="l8d-1s-rrV"/>

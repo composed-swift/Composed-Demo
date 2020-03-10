@@ -15,28 +15,5 @@
             stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.SymbolicBreakpoint">
-         <BreakpointContent
-            uuid = "34ED7946-AE79-487E-8A42-6AB867865F34"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            symbolName = "UITableViewAlertForCellForRowAtIndexPathAccessDuringUpdate"
-            moduleName = "">
-            <Locations>
-               <Location
-                  uuid = "34ED7946-AE79-487E-8A42-6AB867865F34 - 2ed3cb1b2b028de9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "UITableViewAlertForCellForRowAtIndexPathAccessDuringUpdate"
-                  moduleName = "UIKitCore"
-                  usesParentBreakpointCondition = "Yes"
-                  offsetFromSymbolStart = "0">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
