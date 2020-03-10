@@ -105,7 +105,7 @@
         <scene sceneID="7yx-5w-cQf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3tW-ay-m4s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" id="7xE-RD-yyE"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="table" catalog="system" id="7xE-RD-yyE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CU8-ih-QVP">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -133,6 +133,7 @@
                     <connections>
                         <segue destination="3tW-ay-m4s" kind="relationship" relationship="viewControllers" id="Lhw-Oh-vB2"/>
                         <segue destination="R0X-vd-UVJ" kind="relationship" relationship="viewControllers" id="DGP-Tj-Zga"/>
+                        <segue destination="hfd-ya-oNV" kind="relationship" relationship="viewControllers" id="HsY-iI-Ssh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLF-85-bj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -143,7 +144,7 @@
         <scene sceneID="HdM-rN-FHV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0X-vd-UVJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" id="AzL-y1-R8J"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="rectangle.split.3x1" catalog="system" id="AzL-y1-R8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Xsw-b4-DBc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -203,9 +204,61 @@
             </objects>
             <point key="canvasLocation" x="1900" y="321"/>
         </scene>
+        <!--Stack-->
+        <scene sceneID="U0G-kp-pnM">
+            <objects>
+                <viewController id="UtT-fp-lIg" sceneMemberID="viewController">
+                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" id="rEJ-Mh-6WU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="1q6-Rr-50B"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="efQ-2a-WJ8"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="qoU-p4-qYG"/>
+                    </scrollView>
+                    <navigationItem key="navigationItem" title="Stack" id="VU8-Ur-N94">
+                        <barButtonItem key="leftBarButtonItem" title="Remove Section" id="NkQ-nI-7y0">
+                            <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="removeSection" destination="hEO-Cj-rAH" id="pXu-yL-yjN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Add Section" id="pEL-5i-aHq">
+                            <connections>
+                                <action selector="appendSection" destination="hEO-Cj-rAH" id="vXH-sl-fpM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WNd-4h-DDJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="993.75"/>
+        </scene>
+        <!--Stack-->
+        <scene sceneID="qZe-Io-R07">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hfd-ya-oNV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Stack" image="flowchart" catalog="system" id="uhh-ct-yjQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Bm-Nz-dp3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UtT-fp-lIg" kind="relationship" relationship="rootViewController" id="6rx-T2-lEX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m01-eE-dbK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="994"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="flowchart" catalog="system" width="64" height="64"/>
         <image name="minus.circle" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
+        <image name="rectangle.split.3x1" catalog="system" width="64" height="46"/>
+        <image name="table" catalog="system" width="64" height="46"/>
     </resources>
 </document>
