@@ -189,3 +189,7 @@ extension PeopleSection: CollectionSectionProvider {
     }
 
 }
+
+protocol CollectionSelectableSection: Section {
+    func didSelect(at index: Int)
+}
