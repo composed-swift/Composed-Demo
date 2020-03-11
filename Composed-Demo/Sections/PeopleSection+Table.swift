@@ -18,6 +18,12 @@ extension PeopleSection: TableSectionProvider {
 
 }
 
+extension PeopleSection: TableSectionLayoutHandler {
+
+    func heightForHeader(suggested: CGFloat, traitCollection: UITraitCollection) -> CGFloat { return 0 }
+
+}
+
 extension PeopleSection: TableEditingHandler {
     func allowsEditing(at index: Int) -> Bool { return true }
     func editingStyle(at index: Int) -> UITableViewCell.EditingStyle { return .delete }

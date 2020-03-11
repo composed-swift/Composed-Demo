@@ -21,14 +21,14 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="wTY-Ps-0bD" customClass="PersonTableCell" customModule="Composed_Demo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wTY-Ps-0bD" id="VPL-lb-A5U">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="center" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAI-iR-h6t">
-                                                    <rect key="frame" x="0.0" y="-0.5" width="64" height="44"/>
+                                                    <rect key="frame" x="0.0" y="-1.5" width="64" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="fZr-ee-MiG"/>
                                                         <constraint firstAttribute="width" constant="64" id="h61-sC-NOj"/>
@@ -41,13 +41,13 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dso-FK-416">
-                                                    <rect key="frame" x="64" y="11" width="286" height="20.5"/>
+                                                    <rect key="frame" x="64" y="10" width="286" height="20.5"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="center" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqM-XE-Hxq">
-                                                    <rect key="frame" x="350" y="-0.5" width="64" height="44"/>
+                                                    <rect key="frame" x="350" y="-1.5" width="64" height="44"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="64" id="9SV-jh-pKq"/>
                                                         <constraint firstAttribute="height" constant="44" id="UKm-17-HR2"/>
@@ -63,10 +63,10 @@
                                                 <constraint firstItem="KqM-XE-Hxq" firstAttribute="centerY" secondItem="VPL-lb-A5U" secondAttribute="centerY" id="0og-FF-deu"/>
                                                 <constraint firstItem="PAI-iR-h6t" firstAttribute="centerY" secondItem="VPL-lb-A5U" secondAttribute="centerY" id="6d8-CT-CsF"/>
                                                 <constraint firstItem="KqM-XE-Hxq" firstAttribute="leading" secondItem="dso-FK-416" secondAttribute="trailing" id="8Hy-1D-1ef"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="dso-FK-416" secondAttribute="bottom" priority="999" id="Ohn-m6-F2M"/>
+                                                <constraint firstAttribute="bottom" secondItem="dso-FK-416" secondAttribute="bottom" priority="999" constant="10" id="Ohn-m6-F2M"/>
                                                 <constraint firstItem="dso-FK-416" firstAttribute="leading" secondItem="PAI-iR-h6t" secondAttribute="trailing" id="PAA-mc-ROX"/>
                                                 <constraint firstItem="PAI-iR-h6t" firstAttribute="leading" secondItem="VPL-lb-A5U" secondAttribute="leading" id="ZNS-kE-m9L"/>
-                                                <constraint firstItem="dso-FK-416" firstAttribute="top" secondItem="VPL-lb-A5U" secondAttribute="topMargin" id="fjV-BQ-tYB"/>
+                                                <constraint firstItem="dso-FK-416" firstAttribute="top" secondItem="VPL-lb-A5U" secondAttribute="top" constant="10" id="fjV-BQ-tYB"/>
                                                 <constraint firstAttribute="trailing" secondItem="KqM-XE-Hxq" secondAttribute="trailing" id="mVf-9E-ePp"/>
                                             </constraints>
                                         </tableViewCellContentView>

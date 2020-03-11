@@ -32,8 +32,9 @@ extension PeopleSection: CollectionFlowLayoutHandler {
     }
 
     func referenceHeaderSize(suggested: CGSize, environment: CollectionFlowLayoutEnvironment) -> CGSize {
-        let target = CGSize(width: environment.contentSize.width, height: 0)
-        return prototypeHeader.systemLayoutSizeFitting(target, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
+        return .zero
+//        let target = CGSize(width: environment.contentSize.width, height: 0)
+//        return prototypeHeader.systemLayoutSizeFitting(target, withHorizontalFittingPriority: .required, verticalFittingPriority: .fittingSizeLevel)
     }
 
     func sizingStrategy(at index: Int, metrics: CollectionFlowLayoutMetrics, environment: CollectionFlowLayoutEnvironment) -> CollectionFlowLayoutSizingStrategy? {
