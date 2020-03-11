@@ -12,9 +12,4 @@ final class PeopleTableViewController: PeopleViewController {
         coordinator = TableCoordinator(tableView: tableView, sectionProvider: provider)
     }
 
-    override func setEditing(_ editing: Bool, animated: Bool) {
-        super.setEditing(editing, animated: animated)
-        tableView.setEditing(editing, animated: animated)
-    }
-
 }

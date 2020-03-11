@@ -12,4 +12,11 @@ final class PeopleCollectionViewController: PeopleViewController {
         coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: provider)
     }
 
+    /// Required specifically for `UICollectionViewFlowLayout` since some rotations don't cause an invalidation!?
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.coordinator?.invalidateLayout()
+        
+    }
+
 }

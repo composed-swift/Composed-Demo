@@ -31,7 +31,6 @@ extension PeopleSection {
 
         cell.titleLabel.text = person.name
         cell.person = person
-
         cell.insertionHandler = { [weak self] person in
             guard let self = self else { return }
             let index = person.flatMap { self.firstIndex(of: $0) } ?? index

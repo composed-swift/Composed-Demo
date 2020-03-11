@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonCell" id="c04-VO-PJ3" customClass="PersonCollectionCell" customModule="Composed_Demo" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
             <autoresizingMask key="autoresizingMask"/>
             <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E8q-j1-mei">
-                <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2Wx-jB-H0h" userLabel="Background">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="38"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SNU-6w-yAE" userLabel="Selected Background">
@@ -59,7 +59,7 @@
                         </connections>
                     </button>
                     <view contentMode="scaleToFill" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="Lwi-1L-rDG">
-                        <rect key="frame" x="20" y="37.5" width="394" height="0.5"/>
+                        <rect key="frame" x="20" y="40.5" width="394" height="0.5"/>
                         <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="0.5" id="4A7-F4-cLj"/>
@@ -82,13 +82,14 @@
                 <viewLayoutGuide key="safeArea" id="ro4-hC-h7F"/>
             </collectionViewCellContentView>
             <viewLayoutGuide key="safeArea" id="xf7-Xt-v9L"/>
-            <size key="customSize" width="414" height="38"/>
+            <size key="customSize" width="414" height="41"/>
             <connections>
                 <outlet property="backgroundView" destination="2Wx-jB-H0h" id="qFE-HB-MJK"/>
                 <outlet property="selectedBackgroundView" destination="SNU-6w-yAE" id="k58-Uw-nfo"/>
+                <outlet property="separatorView" destination="Lwi-1L-rDG" id="i1Q-m5-wCl"/>
                 <outlet property="titleLabel" destination="hBh-Vo-4Dt" id="V7f-6Y-Ew5"/>
             </connections>
-            <point key="canvasLocation" x="-46.376811594202906" y="152.67857142857142"/>
+            <point key="canvasLocation" x="-46.376811594202906" y="153.68303571428569"/>
         </collectionViewCell>
     </objects>
     <resources>

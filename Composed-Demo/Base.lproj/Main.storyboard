@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" id="c1C-rP-1co">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="20" id="c1C-rP-1co">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -105,7 +105,7 @@
         <scene sceneID="7yx-5w-cQf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3tW-ay-m4s" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Table" image="table" catalog="system" id="7xE-RD-yyE"/>
+                    <tabBarItem key="tabBarItem" title="Table" image="square.split.1x2" catalog="system" id="7xE-RD-yyE"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="CU8-ih-QVP">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -144,7 +144,7 @@
         <scene sceneID="HdM-rN-FHV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R0X-vd-UVJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Collection" image="flowchart" id="AzL-y1-R8J"/>
+                    <tabBarItem key="tabBarItem" title="Collection" image="square.split.2x2" catalog="system" id="AzL-y1-R8J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Xsw-b4-DBc">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -207,25 +207,23 @@
         <!--Stack-->
         <scene sceneID="U0G-kp-pnM">
             <objects>
-                <viewController id="UtT-fp-lIg" sceneMemberID="viewController">
-                    <scrollView key="view" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" id="rEJ-Mh-6WU">
+                <viewController id="UtT-fp-lIg" customClass="PeopleStackViewController" customModule="Composed_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rEx-uX-m7J" customClass="ComposedView" customModule="ComposedUI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="1q6-Rr-50B"/>
-                        <viewLayoutGuide key="contentLayoutGuide" id="giT-3N-PmS"/>
-                        <viewLayoutGuide key="frameLayoutGuide" id="IY0-QR-U6a"/>
-                    </scrollView>
-                    <navigationItem key="navigationItem" title="Stack" id="VU8-Ur-N94">
+                        <viewLayoutGuide key="safeArea" id="mEL-7Z-0Ah"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stack" largeTitleDisplayMode="always" id="VU8-Ur-N94">
                         <barButtonItem key="leftBarButtonItem" title="Remove Section" id="NkQ-nI-7y0">
                             <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="removeSection" destination="hEO-Cj-rAH" id="pXu-yL-yjN"/>
+                                <action selector="removeSection" destination="UtT-fp-lIg" id="9qI-DX-GvC"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Section" id="pEL-5i-aHq">
                             <connections>
-                                <action selector="appendSection" destination="hEO-Cj-rAH" id="vXH-sl-fpM"/>
+                                <action selector="appendSection" destination="UtT-fp-lIg" id="fcw-2s-kW9"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -238,10 +236,10 @@
         <scene sceneID="qZe-Io-R07">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hfd-ya-oNV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stack" image="flowchart" id="uhh-ct-yjQ"/>
+                    <tabBarItem key="tabBarItem" title="Stack" image="flowchart" catalog="system" id="uhh-ct-yjQ"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Bm-Nz-dp3">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="0Bm-Nz-dp3">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -255,9 +253,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flowchart" width="64" height="64"/>
+        <image name="flowchart" catalog="system" width="64" height="64"/>
         <image name="minus.circle" catalog="system" width="64" height="60"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
-        <image name="table" catalog="system" width="64" height="46"/>
+        <image name="square.split.1x2" catalog="system" width="64" height="56"/>
+        <image name="square.split.2x2" catalog="system" width="64" height="56"/>
     </resources>
 </document>

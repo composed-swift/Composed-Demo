@@ -19,6 +19,7 @@ final class PersonCollectionHeader: UICollectionReusableView, NibLoadable {
 
 final class PersonCollectionCell: UICollectionViewCell, NibLoadable {
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var separatorView: UIView!
     var person: Person?
 
     var insertionHandler: ((Person?) -> Void)?
