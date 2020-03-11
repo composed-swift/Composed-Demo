@@ -12,11 +12,11 @@ extension PeopleSection: CollectionSectionProvider {
     }
 
     func section(with traitCollection: UITraitCollection) -> CollectionSection {
-        let header = CollectionSupplementaryElement(section: self, dequeueMethod: .nib(PersonCollectionHeader.self)) { view, _, section in
+        let header = CollectionSupplementaryElement(section: self, dequeueMethod: .fromNib(PersonCollectionHeader.self)) { view, _, section in
             section.prepare(header: view)
         }
 
-        let cell = CollectionCellElement(section: self, dequeueMethod: .nib(PersonCollectionCell.self), reuseIdentifier: "PersonCell") { cell, index, section in
+        let cell = CollectionCellElement(section: self, dequeueMethod: .fromNib(PersonCollectionCell.self), reuseIdentifier: "PersonCell") { cell, index, section in
             section.prepare(cell: cell, at: index)
         }
 

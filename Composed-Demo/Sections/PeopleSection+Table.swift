@@ -5,11 +5,11 @@ import ComposedUI
 extension PeopleSection: TableSectionProvider {
 
     func section(with traitCollection: UITraitCollection) -> TableSection {
-        let header = TableElement(section: self, dequeueMethod: .nib(PersonTableHeader.self)) { view, _, section in
+        let header = TableElement(section: self, dequeueMethod: .fromNib(PersonTableHeader.self)) { view, _, section in
             section.prepare(header: view)
         }
 
-        let cell = TableElement(section: self, dequeueMethod: .storyboard(PersonTableCell.self), reuseIdentifier: "Cell") { cell, index, section in
+        let cell = TableElement(section: self, dequeueMethod: .fromStoryboard(PersonTableCell.self), reuseIdentifier: "Cell") { cell, index, section in
             section.prepare(cell: cell, at: index)
         }
 
@@ -19,9 +19,7 @@ extension PeopleSection: TableSectionProvider {
 }
 
 extension PeopleSection: TableSectionLayoutHandler {
-
     func heightForHeader(suggested: CGFloat, traitCollection: UITraitCollection) -> CGFloat { return 0 }
-
 }
 
 extension PeopleSection: TableEditingHandler {
@@ -29,4 +27,3 @@ extension PeopleSection: TableEditingHandler {
     func editingStyle(at index: Int) -> UITableViewCell.EditingStyle { return .delete }
     func commitEditing(at index: Int, editingStyle: UITableViewCell.EditingStyle) { remove(at: index) }
 }
-

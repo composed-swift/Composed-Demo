@@ -24,6 +24,7 @@
 		546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546568E32417F282003FEF70 /* PeopleStackViewController.swift */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
 		548FAB4A2418FF2D0092F29B /* PersonStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548FAB492418FF2D0092F29B /* PersonStackCell.swift */; };
+		548FAB4C24193BE90092F29B /* PeopleSection+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */; };
 		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
 		54E7FA7F2417E0A700CB842B /* PeopleSection+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E7FA7E2417E0A700CB842B /* PeopleSection+Collection.swift */; };
 		54E7FA812417E0B000CB842B /* PeopleSection+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */; };
@@ -55,6 +56,7 @@
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
+		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
 		54E7FA7E2417E0A700CB842B /* PeopleSection+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Collection.swift"; sourceTree = "<group>"; };
 		54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Table.swift"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				54BF82E022F1C5DB00D50991 /* PeopleSection.swift */,
 				54E7FA7E2417E0A700CB842B /* PeopleSection+Collection.swift */,
 				54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */,
+				548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */,
 				54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */,
 			);
 			path = Sections;
@@ -270,6 +273,7 @@
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
 				54E7FA832417E17900CB842B /* PeopleSection+Editing.swift in Sources */,
 				5429B1A72401901800B7159B /* PersonTableCell.swift in Sources */,
+				548FAB4C24193BE90092F29B /* PeopleSection+Stack.swift in Sources */,
 				5429B19F24017BC100B7159B /* Lorem.swift in Sources */,
 				54E7FA7F2417E0A700CB842B /* PeopleSection+Collection.swift in Sources */,
 				5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */,
