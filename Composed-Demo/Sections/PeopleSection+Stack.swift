@@ -14,3 +14,11 @@ extension PeopleSection: StackSectionProvider {
     }
 
 }
+
+extension PeopleSection: StackSectionAppearanceHandler {
+
+    func separatorInsets(suggested: UIEdgeInsets, traitCollection: UITraitCollection) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
+    }
+
+}
