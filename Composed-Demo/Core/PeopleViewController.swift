@@ -16,7 +16,8 @@ class PeopleViewController: UIViewController {
     }
 
     @IBAction func removeSection() {
-        provider.remove(at: provider.sections.count - 1)
+        guard let section = provider.sections.last as? PeopleSection else { return }
+        section.removeAll()
     }
 
 }
