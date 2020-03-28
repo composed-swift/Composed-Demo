@@ -22,7 +22,10 @@
 		54608252240004870000C54E /* Composed in Frameworks */ = {isa = PBXBuildFile; productRef = 54608251240004870000C54E /* Composed */; };
 		54608258240004FA0000C54E /* ComposedLayouts in Frameworks */ = {isa = PBXBuildFile; productRef = 54608257240004FA0000C54E /* ComposedLayouts */; };
 		546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546568E32417F282003FEF70 /* PeopleStackViewController.swift */; };
+		546F6319242FA0FE006AC09F /* ComposedMediaUI in Frameworks */ = {isa = PBXBuildFile; productRef = 546F6318242FA0FE006AC09F /* ComposedMediaUI */; };
 		5483B5B722E7C7C400E4BF34 /* PersonCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */; };
+		548D9C3A242F9FD40059E42B /* MediaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548D9C39242F9FD40059E42B /* MediaController.swift */; };
+		548D9C3D242FA0190059E42B /* ComposedMedia in Frameworks */ = {isa = PBXBuildFile; productRef = 548D9C3C242FA0190059E42B /* ComposedMedia */; };
 		548FAB4A2418FF2D0092F29B /* PersonStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548FAB492418FF2D0092F29B /* PersonStackCell.swift */; };
 		548FAB4C24193BE90092F29B /* PeopleSection+Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */; };
 		54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF82E022F1C5DB00D50991 /* PeopleSection.swift */; };
@@ -55,6 +58,9 @@
 		546A66C92417F71B008DC538 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		548D9C35242F975E0059E42B /* ComposedMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMedia; path = ../ComposedMedia; sourceTree = "<group>"; };
+		548D9C37242F9CD10059E42B /* ComposedMediaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMediaUI; path = ../ComposedMediaUI; sourceTree = "<group>"; };
+		548D9C39242F9FD40059E42B /* MediaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaController.swift; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
 		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
@@ -73,6 +79,8 @@
 				54F68E99231098A600C0319E /* ComposedUI in Frameworks */,
 				54608258240004FA0000C54E /* ComposedLayouts in Frameworks */,
 				54608252240004870000C54E /* Composed in Frameworks */,
+				548D9C3D242FA0190059E42B /* ComposedMedia in Frameworks */,
+				546F6319242FA0FE006AC09F /* ComposedMediaUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +94,8 @@
 				546A66C82417F71B008DC538 /* Composed */,
 				546A66C92417F71B008DC538 /* ComposedUI */,
 				546A66C72417F71B008DC538 /* ComposedLayouts */,
+				548D9C35242F975E0059E42B /* ComposedMedia */,
+				548D9C37242F9CD10059E42B /* ComposedMediaUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -108,6 +118,7 @@
 				54E7FA7C2417E03E00CB842B /* Table */,
 				54E7FA7B2417E03800CB842B /* Collection */,
 				546568E22417F264003FEF70 /* Stack */,
+				548D9C38242F9FAB0059E42B /* Media */,
 				542BD60822E7A69A00CC9980 /* Main.storyboard */,
 				542BD60D22E7A69B00CC9980 /* LaunchScreen.storyboard */,
 				542BD61022E7A69B00CC9980 /* Info.plist */,
@@ -130,6 +141,14 @@
 				548FAB492418FF2D0092F29B /* PersonStackCell.swift */,
 			);
 			path = Stack;
+			sourceTree = "<group>";
+		};
+		548D9C38242F9FAB0059E42B /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				548D9C39242F9FD40059E42B /* MediaController.swift */,
+			);
+			path = Media;
 			sourceTree = "<group>";
 		};
 		54E7FA7A2417E03100CB842B /* Sections */ = {
@@ -197,6 +216,8 @@
 				54F68E9D23109BF600C0319E /* FlowLayout */,
 				54608251240004870000C54E /* Composed */,
 				54608257240004FA0000C54E /* ComposedLayouts */,
+				548D9C3C242FA0190059E42B /* ComposedMedia */,
+				546F6318242FA0FE006AC09F /* ComposedMediaUI */,
 			);
 			productName = "Composed-Demo";
 			productReference = 542BD5FF22E7A69A00CC9980 /* Composed-Demo.app */;
@@ -231,6 +252,8 @@
 				54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */,
 				54608250240004870000C54E /* XCRemoteSwiftPackageReference "Composed" */,
 				54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */,
+				548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */,
+				546F6317242FA0FE006AC09F /* XCRemoteSwiftPackageReference "ComposedMediaUI" */,
 			);
 			productRefGroup = 542BD60022E7A69A00CC9980 /* Products */;
 			projectDirPath = "";
@@ -266,6 +289,7 @@
 				548FAB4A2418FF2D0092F29B /* PersonStackCell.swift in Sources */,
 				546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */,
 				5429B1A124017E1B00B7159B /* PeopleViewController.swift in Sources */,
+				548D9C3A242F9FD40059E42B /* MediaController.swift in Sources */,
 				54E7FA812417E0B000CB842B /* PeopleSection+Table.swift in Sources */,
 				54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */,
 				542BD60722E7A69A00CC9980 /* PeopleTableViewController.swift in Sources */,
@@ -423,7 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Composed-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -442,7 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2CWYL9AN8;
 				INFOPLIST_FILE = "Composed-Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +518,22 @@
 				kind = branch;
 			};
 		};
+		546F6317242FA0FE006AC09F /* XCRemoteSwiftPackageReference "ComposedMediaUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:composed-swift/ComposedMediaUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:composed-swift/ComposedMedia.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
@@ -522,6 +562,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */;
 			productName = ComposedLayouts;
+		};
+		546F6318242FA0FE006AC09F /* ComposedMediaUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 546F6317242FA0FE006AC09F /* XCRemoteSwiftPackageReference "ComposedMediaUI" */;
+			productName = ComposedMediaUI;
+		};
+		548D9C3C242FA0190059E42B /* ComposedMedia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */;
+			productName = ComposedMedia;
 		};
 		54F68E98231098A600C0319E /* ComposedUI */ = {
 			isa = XCSwiftPackageProductDependency;

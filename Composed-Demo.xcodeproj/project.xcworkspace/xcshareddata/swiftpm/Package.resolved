@@ -2,33 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "Composed",
-        "repositoryURL": "https://github.com/composed-swift/Composed.git",
-        "state": {
-          "branch": "master",
-          "revision": "99fd5cb793286536e8d077e6aa511f305dd827e5",
-          "version": null
-        }
-      },
-      {
-        "package": "ComposedLayouts",
-        "repositoryURL": "https://github.com/composed-swift/ComposedLayouts.git",
-        "state": {
-          "branch": "master",
-          "revision": "ce6a95e9749d8bb63438e2cac449c77859c1fdba",
-          "version": null
-        }
-      },
-      {
-        "package": "ComposedUI",
-        "repositoryURL": "git@github.com:composed-swift/ComposedUI.git",
-        "state": {
-          "branch": "master",
-          "revision": "dda47d3f0db2402e821849e2ba41837e9d75ab6c",
-          "version": null
-        }
-      },
-      {
         "package": "CwlCatchException",
         "repositoryURL": "https://github.com/mattgallagher/CwlCatchException.git",
         "state": {

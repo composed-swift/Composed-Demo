@@ -134,6 +134,7 @@
                         <segue destination="3tW-ay-m4s" kind="relationship" relationship="viewControllers" id="Lhw-Oh-vB2"/>
                         <segue destination="R0X-vd-UVJ" kind="relationship" relationship="viewControllers" id="DGP-Tj-Zga"/>
                         <segue destination="hfd-ya-oNV" kind="relationship" relationship="viewControllers" id="HsY-iI-Ssh"/>
+                        <segue destination="6vT-8X-Phe" kind="relationship" relationship="viewControllers" id="Nrh-LX-Yni"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLF-85-bj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -232,6 +233,22 @@
             </objects>
             <point key="canvasLocation" x="1900.0000000000002" y="993.75"/>
         </scene>
+        <!--Media-->
+        <scene sceneID="CIS-VE-3K2">
+            <objects>
+                <viewController id="eZM-Mm-4eS" customClass="MediaViewController" customModule="ComposedMediaUI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1s8-V2-qId">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="gqW-Bj-eyY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Media" id="t8s-ok-X2T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhe-71-MyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900" y="1680"/>
+        </scene>
         <!--Stack-->
         <scene sceneID="qZe-Io-R07">
             <objects>
@@ -251,10 +268,30 @@
             </objects>
             <point key="canvasLocation" x="1132" y="994"/>
         </scene>
+        <!--Media-->
+        <scene sceneID="9Cj-TZ-eqD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6vT-8X-Phe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Media" image="photo" catalog="system" id="6Yt-15-u4p"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="R9j-Lg-36k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eZM-Mm-4eS" kind="relationship" relationship="rootViewController" id="CRy-8Y-r7H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hu9-sz-CDf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1132" y="1680"/>
+        </scene>
     </scenes>
     <resources>
         <image name="flowchart" catalog="system" width="64" height="64"/>
         <image name="minus.circle" catalog="system" width="64" height="60"/>
+        <image name="photo" catalog="system" width="64" height="46"/>
         <image name="plus.circle" catalog="system" width="64" height="60"/>
         <image name="square.split.1x2" catalog="system" width="64" height="56"/>
         <image name="square.split.2x2" catalog="system" width="64" height="56"/>
