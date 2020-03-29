@@ -4,7 +4,7 @@ import ComposedUI
 
 class PeopleViewController: UIViewController {
 
-    let provider = PeopleComposedSectionProvider()
+    private(set) lazy var provider = PeopleComposedSectionProvider(controller: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()

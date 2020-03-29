@@ -1,6 +1,8 @@
 import UIKit
+import Photos
 import Composed
 import ComposedUI
+import ComposedMediaUI
 
 extension PeopleSection: TableSectionProvider {
 
@@ -22,4 +24,19 @@ extension PeopleSection: TableEditingHandler {
     func allowsEditing(at index: Int) -> Bool { return true }
     func editingStyle(at index: Int) -> UITableViewCell.EditingStyle { return .delete }
     func commitEditing(at index: Int, editingStyle: UITableViewCell.EditingStyle) { remove(at: index) }
+}
+
+extension PeopleSection: TableSelectionHandler {
+
+    func didSelect(at index: Int, cell: UITableViewCell) {
+        let media = MediaViewController()
+        media.pickerDelegate = self
+
+        let nav = UINavigationController(rootViewController: media)
+        nav.navigationBar.tintColor = .systemRed
+        nav.toolbar.tintColor = .systemRed
+        controller?.present(nav, animated: true, completion: nil)
+        deselect(index: index)
+    }
+
 }

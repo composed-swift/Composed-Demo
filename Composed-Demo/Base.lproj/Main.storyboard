@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33O-9h-pbi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="33O-9h-pbi">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -236,7 +237,7 @@
         <!--Media-->
         <scene sceneID="CIS-VE-3K2">
             <objects>
-                <viewController id="eZM-Mm-4eS" customClass="MediaViewController" customModule="ComposedMediaUI" sceneMemberID="viewController">
+                <viewController title="Media" id="eZM-Mm-4eS" customClass="MediaViewController" customModule="ComposedMediaUI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1s8-V2-qId">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,11 +290,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="flowchart" catalog="system" width="64" height="64"/>
-        <image name="minus.circle" catalog="system" width="64" height="60"/>
-        <image name="photo" catalog="system" width="64" height="46"/>
-        <image name="plus.circle" catalog="system" width="64" height="60"/>
-        <image name="square.split.1x2" catalog="system" width="64" height="56"/>
-        <image name="square.split.2x2" catalog="system" width="64" height="56"/>
+        <image name="flowchart" catalog="system" width="128" height="128"/>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="square.split.1x2" catalog="system" width="128" height="114"/>
+        <image name="square.split.2x2" catalog="system" width="128" height="114"/>
     </resources>
 </document>
