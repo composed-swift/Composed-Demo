@@ -4,6 +4,7 @@ import Composed
 import ComposedUI
 import ComposedLayouts
 import ComposedMediaUI
+import QuickLook
 
 struct Person: Equatable {
     var id: UUID
@@ -22,6 +23,7 @@ final class PeopleSection: ArraySection<Person> {
 
     private(set) weak var parent: PeopleComposedSectionProvider?
     weak var controller: UIViewController?
+    private var previewAsssets: [NSURL] = []
 
     convenience init(parent: PeopleComposedSectionProvider, elements: [Person], controller: UIViewController?) {
         self.init(elements)
@@ -34,11 +36,44 @@ final class PeopleSection: ArraySection<Person> {
 extension PeopleSection: MediaPickerDelegate {
 
     func mediaPicker(_ controller: MediaViewController, didPickAssets assets: [PHAsset]) {
-        self.controller?.dismiss(animated: true, completion: nil)
+        previewAsssets.removeAll()
+        let caches = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first!
+
+        self.controller?.dismiss(animated: true) {
+            let preview = QLPreviewController()
+            preview.dataSource = self
+            self.controller?.present(preview, animated: true, completion: nil)
+
+            assets.enumerated().forEach { asset in
+                PHImageManager.default().requestImageData(for: asset.element, options: nil) { [weak self] data, _, _, info in
+                    do {
+                        let url = URL(fileURLWithPath: caches)
+                            .appendingPathComponent("\(asset.offset).jpg")
+                        try data?.write(to: url)
+                        self?.previewAsssets.append(url as NSURL)
+                        preview.reloadData()
+                    } catch {
+                        print(error)
+                    }
+                }
+            }
+        }
     }
 
     func mediaPickerWasCancelled(_ controller: MediaViewController) {
         self.controller?.dismiss(animated: true, completion: nil)
+    }
+
+}
+
+extension PeopleSection: QLPreviewControllerDataSource {
+
+    func previewController(_ controller: QLPreviewController, previewItemAt index: Int) -> QLPreviewItem {
+        return previewAsssets[index]
+    }
+
+    func numberOfPreviewItems(in controller: QLPreviewController) -> Int {
+        return previewAsssets.count
     }
 
 }
