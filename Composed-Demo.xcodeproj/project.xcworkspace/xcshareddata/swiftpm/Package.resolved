@@ -2,33 +2,6 @@
   "object": {
     "pins": [
       {
-        "package": "Composed",
-        "repositoryURL": "https://github.com/composed-swift/Composed.git",
-        "state": {
-          "branch": "master",
-          "revision": "e4828fbad67aa8b68c2af7e87d8e7c2bbc3995d4",
-          "version": null
-        }
-      },
-      {
-        "package": "ComposedLayouts",
-        "repositoryURL": "https://github.com/composed-swift/ComposedLayouts.git",
-        "state": {
-          "branch": "master",
-          "revision": "03d6f9b9d0692e99a7fdee198190b6c8080d7bf7",
-          "version": null
-        }
-      },
-      {
-        "package": "ComposedUI",
-        "repositoryURL": "git@github.com:composed-swift/ComposedUI.git",
-        "state": {
-          "branch": "master",
-          "revision": "b316363f07add88abed1dc243ae5a63701792b08",
-          "version": null
-        }
-      },
-      {
         "package": "FlowLayout",
         "repositoryURL": "git@github.com:shaps80/FlowLayout.git",
         "state": {
