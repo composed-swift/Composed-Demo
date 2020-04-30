@@ -58,6 +58,7 @@
 		546A66C92417F71B008DC538 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		548886C2245AE18700557652 /* FlowLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FlowLayout; path = ../FlowLayout; sourceTree = "<group>"; };
 		548D9C35242F975E0059E42B /* ComposedMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMedia; path = ../ComposedMedia; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
 		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
+				548886C2245AE18700557652 /* FlowLayout */,
 				546A66C82417F71B008DC538 /* Composed */,
 				546A66C92417F71B008DC538 /* ComposedUI */,
 				546A66C72417F71B008DC538 /* ComposedLayouts */,
@@ -502,16 +504,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/composed-swift/Composed.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/composed-swift/ComposedLayouts.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */ = {
@@ -526,8 +528,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */ = {
