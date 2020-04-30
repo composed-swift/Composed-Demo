@@ -1,8 +1,10 @@
 <img src="composed.png" width=20%/>
 
-**Composed Demo** is a demo app for showcasing usage examples for the Composed Packages. These include:
+**Composed Demo** is a demo app for showcasing usage examples for the Composed Packages.
 
 ---
+
+To learn more, checkout the individual packages.
 
 [**Composed**](http://github.com/composed-swift/composed)
 A framework for composing data.
