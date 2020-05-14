@@ -9,6 +9,7 @@ final class PeopleCollectionViewController: PeopleViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: provider)
     }
 

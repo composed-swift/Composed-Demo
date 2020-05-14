@@ -85,3 +85,11 @@ extension PeopleSection: CollectionSelectionHandler {
     }
 
 }
+
+extension PeopleSection: MoveHandler {
+
+    func didMove(from sourceIndex: Int, to destinationIndex: Int) {
+        move(from: sourceIndex, to: destinationIndex)
+    }
+
+}

@@ -33,7 +33,6 @@
 		54E7FA832417E17900CB842B /* PeopleSection+Editing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */; };
 		54F68E99231098A600C0319E /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 54F68E98231098A600C0319E /* ComposedUI */; };
 		54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */; };
-		54F68E9E23109BF600C0319E /* FlowLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 54F68E9D23109BF600C0319E /* FlowLayout */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,14 +50,12 @@
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
-		545BF60A242FD61900996ACC /* ComposedMediaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMediaUI; path = ../ComposedMediaUI; sourceTree = "<group>"; };
 		546568E32417F282003FEF70 /* PeopleStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStackViewController.swift; sourceTree = "<group>"; };
-		546A66C72417F71B008DC538 /* ComposedLayouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedLayouts; path = ../ComposedLayouts; sourceTree = "<group>"; };
-		546A66C82417F71B008DC538 /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
-		546A66C92417F71B008DC538 /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		548D9C35242F975E0059E42B /* ComposedMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMedia; path = ../ComposedMedia; sourceTree = "<group>"; };
+		5484AD0924697F2000DD51EF /* ComposedUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedUI; path = ../ComposedUI; sourceTree = "<group>"; };
+		5484AD0A246983D700DD51EF /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
+		5484AD0C2469AFAC00DD51EF /* ComposedMediaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMediaUI; path = ../ComposedMediaUI; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
 		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
@@ -73,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54F68E9E23109BF600C0319E /* FlowLayout in Frameworks */,
 				54F68E99231098A600C0319E /* ComposedUI in Frameworks */,
 				54608258240004FA0000C54E /* ComposedLayouts in Frameworks */,
 				54608252240004870000C54E /* Composed in Frameworks */,
@@ -89,11 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
-				546A66C82417F71B008DC538 /* Composed */,
-				546A66C92417F71B008DC538 /* ComposedUI */,
-				546A66C72417F71B008DC538 /* ComposedLayouts */,
-				548D9C35242F975E0059E42B /* ComposedMedia */,
-				545BF60A242FD61900996ACC /* ComposedMediaUI */,
+				5484AD0C2469AFAC00DD51EF /* ComposedMediaUI */,
+				5484AD0A246983D700DD51EF /* Composed */,
+				5484AD0924697F2000DD51EF /* ComposedUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
@@ -202,7 +196,6 @@
 			name = "Composed-Demo";
 			packageProductDependencies = (
 				54F68E98231098A600C0319E /* ComposedUI */,
-				54F68E9D23109BF600C0319E /* FlowLayout */,
 				54608251240004870000C54E /* Composed */,
 				54608257240004FA0000C54E /* ComposedLayouts */,
 				548D9C3C242FA0190059E42B /* ComposedMedia */,
@@ -238,7 +231,6 @@
 			mainGroup = 542BD5F622E7A69A00CC9980;
 			packageReferences = (
 				54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */,
-				54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */,
 				54608250240004870000C54E /* XCRemoteSwiftPackageReference "Composed" */,
 				54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */,
 				548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */,
@@ -502,16 +494,16 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/composed-swift/Composed.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		54608256240004FA0000C54E /* XCRemoteSwiftPackageReference "ComposedLayouts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/composed-swift/ComposedLayouts.git";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 		548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */ = {
@@ -526,16 +518,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
 			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:shaps80/FlowLayout.git";
-			requirement = {
-				branch = master;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -565,11 +549,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */;
 			productName = ComposedUI;
-		};
-		54F68E9D23109BF600C0319E /* FlowLayout */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */;
-			productName = FlowLayout;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

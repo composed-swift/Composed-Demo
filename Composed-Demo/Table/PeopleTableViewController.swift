@@ -10,6 +10,7 @@ final class PeopleTableViewController: PeopleViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         coordinator = TableCoordinator(tableView: tableView, sectionProvider: provider)
+        tableView.isEditing = true
     }
 
 }
