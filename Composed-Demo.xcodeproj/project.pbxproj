@@ -494,7 +494,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		545BF60B242FD62C00996ACC /* XCRemoteSwiftPackageReference "ComposedMediaUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:composed-swift/ComposedMediaUI.git";
+			repositoryURL = "https://github.com/composed-swift/ComposedMediaUI.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -518,7 +518,7 @@
 		};
 		548D9C3B242FA0190059E42B /* XCRemoteSwiftPackageReference "ComposedMedia" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:composed-swift/ComposedMedia.git";
+			repositoryURL = "https://github.com/composed-swift/ComposedMedia.git";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -526,7 +526,7 @@
 		};
 		54F68E97231098A600C0319E /* XCRemoteSwiftPackageReference "ComposedUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:composed-swift/ComposedUI.git";
+			repositoryURL = "https://github.com/composed-swift/ComposedUI.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -534,7 +534,7 @@
 		};
 		54F68E9C23109BF600C0319E /* XCRemoteSwiftPackageReference "FlowLayout" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:shaps80/FlowLayout.git";
+			repositoryURL = "https://github.com/shaps80/FlowLayout.git";
 			requirement = {
 				branch = master;
 				kind = branch;
