@@ -67,6 +67,7 @@
 		54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Table.swift"; sourceTree = "<group>"; };
 		54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Editing.swift"; sourceTree = "<group>"; };
 		54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
+		D92BA7F124EFE83A007366FD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 				548D9C35242F975E0059E42B /* ComposedMedia */,
 				545BF60A242FD61900996ACC /* ComposedMediaUI */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
+				D92BA7F024EFE830007366FD /* Configurations */,
 				542BD60022E7A69A00CC9980 /* Products */,
 				542BD61722E7A71700CC9980 /* Frameworks */,
 			);
@@ -184,6 +186,14 @@
 				5429B1A024017E1B00B7159B /* PeopleViewController.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		D92BA7F024EFE830007366FD /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				D92BA7F124EFE83A007366FD /* SampleCode.xcconfig */,
+			);
+			path = Configurations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,7 +452,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Composed-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Composed-Demo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +471,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Composed-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.152percent.Composed-Demo${SAMPLE_CODE_DISAMBIGUATOR}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
