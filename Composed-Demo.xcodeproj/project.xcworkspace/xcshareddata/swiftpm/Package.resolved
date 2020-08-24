@@ -2,8 +2,26 @@
   "object": {
     "pins": [
       {
+        "package": "ComposedMedia",
+        "repositoryURL": "https://github.com/composed-swift/ComposedMedia.git",
+        "state": {
+          "branch": "master",
+          "revision": "0f9078c8217b2c9e5327e9dc759e4147f0e6af13",
+          "version": null
+        }
+      },
+      {
+        "package": "ComposedMediaUI",
+        "repositoryURL": "https://github.com/composed-swift/ComposedMediaUI.git",
+        "state": {
+          "branch": "master",
+          "revision": "11fee5095158f879301acf70238e4856a3413eca",
+          "version": null
+        }
+      },
+      {
         "package": "FlowLayout",
-        "repositoryURL": "git@github.com:shaps80/FlowLayout.git",
+        "repositoryURL": "https://github.com/shaps80/FlowLayout.git",
         "state": {
           "branch": "master",
           "revision": "88766cd84246481c665d410f01182da31f7296f3",
