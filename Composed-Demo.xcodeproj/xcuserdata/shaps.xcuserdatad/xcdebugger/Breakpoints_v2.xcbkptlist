@@ -31,5 +31,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AE41C9C-CF67-4607-A3E8-18E74D9BA07C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Composed/Sources/Composed/Providers/SegmentedSectionProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "insert(newIndex:newChild:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AE41C9C-CF67-4607-A3E8-18E74D9BA07C - 719bebf95630fc8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Composed.SegmentedSectionProvider.(insert in _6B4FFA60BB2899E5282CA0622E1E371B)(newIndex: Swift.Int, newChild: Swift.Optional&lt;Composed.SegmentedSectionProvider.(Child in _6B4FFA60BB2899E5282CA0622E1E371B)&gt;) -&gt; ()"
+                  moduleName = "Composed-Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaps/Projects/Composed%20Swift/Composed/Sources/Composed/Providers/SegmentedSectionProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "208"
+                  endingLineNumber = "208"
+                  offsetFromSymbolStart = "156">
+               </Location>
+               <Location
+                  uuid = "0AE41C9C-CF67-4607-A3E8-18E74D9BA07C - 719bebf95630fc8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Composed.SegmentedSectionProvider.(insert in _6B4FFA60BB2899E5282CA0622E1E371B)(newIndex: Swift.Int, newChild: Swift.Optional&lt;Composed.SegmentedSectionProvider.(Child in _6B4FFA60BB2899E5282CA0622E1E371B)&gt;) -&gt; ()"
+                  moduleName = "Composed-Demo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shaps/Projects/Composed%20Swift/Composed/Sources/Composed/Providers/SegmentedSectionProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "208"
+                  endingLineNumber = "208"
+                  offsetFromSymbolStart = "363">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E26262C-62DD-4860-8A52-E806C1AE9ECE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Composed/Sources/Composed/Providers/SegmentedSectionProvider.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "insert(at:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
