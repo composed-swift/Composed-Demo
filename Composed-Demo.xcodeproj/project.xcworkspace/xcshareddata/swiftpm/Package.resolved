@@ -11,24 +11,6 @@
         }
       },
       {
-        "package": "ComposedLayouts",
-        "repositoryURL": "https://github.com/composed-swift/ComposedLayouts",
-        "state": {
-          "branch": null,
-          "revision": "1cabc6a9c6de8f7e8477fad66973a479291de420",
-          "version": "1.0.1"
-        }
-      },
-      {
-        "package": "ComposedMediaUI",
-        "repositoryURL": "https://github.com/composed-swift/ComposedMediaUI.git",
-        "state": {
-          "branch": "master",
-          "revision": "11fee5095158f879301acf70238e4856a3413eca",
-          "version": null
-        }
-      },
-      {
         "package": "ComposedUI",
         "repositoryURL": "https://github.com/composed-swift/ComposedUI",
         "state": {
