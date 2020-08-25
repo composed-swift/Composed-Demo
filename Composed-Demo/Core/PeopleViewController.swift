@@ -9,6 +9,8 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         appendSection()
+        appendSection()
+        appendSection()
     }
 
     @IBAction func appendSection() {
@@ -16,8 +18,7 @@ class PeopleViewController: UIViewController {
     }
 
     @IBAction func removeSection() {
-        guard let section = provider.sections.last as? PeopleSection else { return }
-        section.removeAll()
+        provider.currentIndex = provider.children.indices.randomElement() ?? 0
     }
 
 }
