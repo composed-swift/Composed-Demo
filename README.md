@@ -1,3 +1,16 @@
-# Composed Demo
+<img src="composed.png" width=20%/>
 
-A demo app for showcasing usage examples for the Composed group of frameworks.
+**Composed Demo** is a demo app for showcasing usage examples for the Composed Packages.
+
+---
+
+To learn more, checkout the individual packages.
+
+[**Composed**](http://github.com/composed-swift/composed)
+A framework for composing data.
+
+[**ComposedUI**](http://github.com/composed-swift/composedui)
+A framework for building UI components with the Composed framework.
+
+[**ComposedLayouts**](http://github.com/composed-swift/composedlayouts)
+Provides conveniences for using Composed with UICollectionViewCompositionalLayout and UICollectionViewFlowLayout.

@@ -12,7 +12,7 @@
       },
       {
         "package": "ComposedLayouts",
-        "repositoryURL": "https://github.com/composed-swift/ComposedLayouts.git",
+        "repositoryURL": "https://github.com/composed-swift/ComposedLayouts",
         "state": {
           "branch": null,
           "revision": "1cabc6a9c6de8f7e8477fad66973a479291de420",
@@ -20,17 +20,17 @@
         }
       },
       {
-        "package": "ComposedMedia",
-        "repositoryURL": "git@github.com:composed-swift/ComposedMedia.git",
+        "package": "ComposedMediaUI",
+        "repositoryURL": "https://github.com/composed-swift/ComposedMediaUI.git",
         "state": {
           "branch": "master",
-          "revision": "0f9078c8217b2c9e5327e9dc759e4147f0e6af13",
+          "revision": "11fee5095158f879301acf70238e4856a3413eca",
           "version": null
         }
       },
       {
         "package": "ComposedUI",
-        "repositoryURL": "git@github.com:composed-swift/ComposedUI.git",
+        "repositoryURL": "https://github.com/composed-swift/ComposedUI",
         "state": {
           "branch": null,
           "revision": "4c8a50bfb59b7b658713ce642b41450fc6aee57e",
