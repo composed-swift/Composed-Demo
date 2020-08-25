@@ -53,7 +53,6 @@
 		546568E32417F282003FEF70 /* PeopleStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStackViewController.swift; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		548886C2245AE18700557652 /* FlowLayout */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FlowLayout; path = ../FlowLayout; sourceTree = "<group>"; };
 		548D9C35242F975E0059E42B /* ComposedMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMedia; path = ../ComposedMedia; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
 		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
@@ -85,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
-				548886C2245AE18700557652 /* FlowLayout */,
 				548D9C35242F975E0059E42B /* ComposedMedia */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				D92BA7F024EFE830007366FD /* Configurations */,
