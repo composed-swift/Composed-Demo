@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Composed",
+        "repositoryURL": "https://github.com/composed-swift/Composed.git",
+        "state": {
+          "branch": null,
+          "revision": "42aaf908c4ffdb9becb5eae458390c6e4b1ca323",
+          "version": "1.0.1"
+        }
+      },
+      {
         "package": "ComposedLayouts",
         "repositoryURL": "https://github.com/composed-swift/ComposedLayouts.git",
         "state": {
@@ -20,30 +29,12 @@
         }
       },
       {
-        "package": "ComposedMediaUI",
-        "repositoryURL": "git@github.com:composed-swift/ComposedMediaUI.git",
-        "state": {
-          "branch": "master",
-          "revision": "11fee5095158f879301acf70238e4856a3413eca",
-          "version": null
-        }
-      },
-      {
-        "package": "Nimble",
-        "repositoryURL": "https://github.com/quick/nimble",
+        "package": "ComposedUI",
+        "repositoryURL": "git@github.com:composed-swift/ComposedUI.git",
         "state": {
           "branch": null,
-          "revision": "7fd118ec8795888bcbbebc1a41f6984454c4cd6f",
-          "version": "8.0.7"
-        }
-      },
-      {
-        "package": "Quick",
-        "repositoryURL": "https://github.com/quick/quick",
-        "state": {
-          "branch": null,
-          "revision": "33682c2f6230c60614861dfc61df267e11a1602f",
-          "version": "2.2.0"
+          "revision": "4c8a50bfb59b7b658713ce642b41450fc6aee57e",
+          "version": "1.0.1"
         }
       }
     ]
