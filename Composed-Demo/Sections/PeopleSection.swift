@@ -78,7 +78,7 @@ extension PeopleSection: QLPreviewControllerDataSource {
 
 }
 
-final class PeopleComposedSectionProvider: ComposedSectionProvider {
+final class PeopleComposedSectionProvider: SegmentedSectionProvider {
 
     private weak var controller: UIViewController?
 
@@ -100,8 +100,11 @@ final class PeopleComposedSectionProvider: ComposedSectionProvider {
         insert(peopleSection(), at: index)
     }
 
+    var newIndex = 0
     func append() {
         append(peopleSection())
+        self.currentIndex = newIndex
+        newIndex += 1
     }
 
 }
