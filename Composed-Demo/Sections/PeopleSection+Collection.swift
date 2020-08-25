@@ -2,6 +2,7 @@ import UIKit
 import Composed
 import ComposedUI
 import ComposedLayouts
+import ComposedMediaUI
 
 extension PeopleSection: CollectionSectionProvider {
 
@@ -44,3 +45,29 @@ extension PeopleSection: CollectionFlowLayoutHandler {
     }
 
 }
+
+extension PeopleSection: CollectionSelectionHandler {
+
+    func didSelect(at index: Int, cell: UICollectionViewCell) {
+        let media = MediaViewController()
+        media.pickerDelegate = self
+
+        let nav = UINavigationController(rootViewController: media)
+        nav.modalPresentationStyle = .popover
+        nav.popoverPresentationController?.sourceView = cell
+        nav.popoverPresentationController?.sourceRect = cell.bounds
+        controller?.present(nav, animated: true, completion: nil)
+    }
+
+}
+
+extension PeopleSection: CollectionDragHandler {
+    func dragSession(_ session: UIDragSession, dragItemsForBeginning index: Int) -> [UIDragItem] {
+        let data = Data()
+        let provider = NSItemProvider(item: data as NSData, typeIdentifier: "data")
+        let item = UIDragItem(itemProvider: provider)
+        item.localObject = index
+        return [item]
+    }
+}
+

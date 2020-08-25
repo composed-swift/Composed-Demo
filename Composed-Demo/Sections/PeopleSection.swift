@@ -100,38 +100,11 @@ final class PeopleComposedSectionProvider: SegmentedSectionProvider {
         insert(peopleSection(), at: index)
     }
 
-    var newIndex = 0
     func append() {
         append(peopleSection())
-        self.currentIndex = newIndex
-        newIndex += 1
+        currentIndex = children.count - 1
     }
 
-}
-
-extension PeopleSection: CollectionSelectionHandler {
-
-    func didSelect(at index: Int, cell: UICollectionViewCell) {
-        let media = MediaViewController()
-        media.pickerDelegate = self
-
-        let nav = UINavigationController(rootViewController: media)
-        nav.modalPresentationStyle = .popover
-        nav.popoverPresentationController?.sourceView = cell
-        nav.popoverPresentationController?.sourceRect = cell.bounds
-        controller?.present(nav, animated: true, completion: nil)
-    }
-
-}
-
-extension PeopleSection: CollectionDragHandler {
-    func dragSession(_ session: UIDragSession, dragItemsForBeginning index: Int) -> [UIDragItem] {
-        let data = Data()
-        let provider = NSItemProvider(item: data as NSData, typeIdentifier: "data")
-        let item = UIDragItem(itemProvider: provider)
-        item.localObject = index
-        return [item]
-    }
 }
 
 extension PeopleSection: MoveHandler {
