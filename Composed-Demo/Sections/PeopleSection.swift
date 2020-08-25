@@ -121,10 +121,26 @@ extension PeopleSection: CollectionSelectionHandler {
 
 }
 
-//extension PeopleSection: MoveHandler {
-//
-//    func didMove(from sourceIndex: Int, to destinationIndex: Int) {
-//        move(from: sourceIndex, to: destinationIndex)
-//    }
-//
-//}
+extension PeopleSection: CollectionDragHandler {
+    func dragSession(_ session: UIDragSession, dragItemsForBeginning index: Int) -> [UIDragItem] {
+        let data = Data()
+        let provider = NSItemProvider(item: data as NSData, typeIdentifier: "data")
+        let item = UIDragItem(itemProvider: provider)
+        item.localObject = index
+        return [item]
+    }
+}
+
+extension PeopleSection: MoveHandler {
+
+    func canMove(index: Int) -> Bool {
+        return true
+    }
+
+    func didMove(sourceIndexes: IndexSet, to destinationIndex: Int) {
+        sourceIndexes.forEach {
+            commitInteractiveMove(from: $0, to: destinationIndex)
+        }
+    }
+
+}
