@@ -33,6 +33,7 @@
 		54ECBD2024F5086A003E8D1F /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 54ECBD1F24F5086A003E8D1F /* ComposedUI */; };
 		54ECBD2324F50891003E8D1F /* ComposedLayouts in Frameworks */ = {isa = PBXBuildFile; productRef = 54ECBD2224F50891003E8D1F /* ComposedLayouts */; };
 		54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */; };
+		D9DBB9A62506774C0090BB36 /* SingleRandomElementSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DBB9A52506774C0090BB36 /* SingleRandomElementSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Editing.swift"; sourceTree = "<group>"; };
 		54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
 		D92BA7F124EFE83A007366FD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		D9DBB9A52506774C0090BB36 /* SingleRandomElementSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRandomElementSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */,
 				548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */,
 				54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */,
+				D9DBB9A52506774C0090BB36 /* SingleRandomElementSection.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				542BD60322E7A69A00CC9980 /* AppDelegate.swift in Sources */,
 				542BD60522E7A69A00CC9980 /* SceneDelegate.swift in Sources */,
 				54E7FA832417E17900CB842B /* PeopleSection+Editing.swift in Sources */,
+				D9DBB9A62506774C0090BB36 /* SingleRandomElementSection.swift in Sources */,
 				5429B1A72401901800B7159B /* PersonTableCell.swift in Sources */,
 				548FAB4C24193BE90092F29B /* PeopleSection+Stack.swift in Sources */,
 				5429B19F24017BC100B7159B /* Lorem.swift in Sources */,

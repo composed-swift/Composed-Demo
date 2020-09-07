@@ -10,8 +10,14 @@ final class PeopleCollectionViewController: PeopleViewController, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // This works
+        composedProvider.append(SingleRandomElementSection())
+
         coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: composedProvider)
         collectionView.delegate = self
+
+        // This crashes
+//        composedProvider.append(SingleRandomElementSection())
     }
 
     /// Required specifically for `UICollectionViewFlowLayout` since some rotations don't cause an invalidation!?
