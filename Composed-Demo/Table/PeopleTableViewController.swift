@@ -9,7 +9,7 @@ final class PeopleTableViewController: PeopleViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coordinator = TableCoordinator(tableView: tableView, sectionProvider: provider)
+        coordinator = TableCoordinator(tableView: tableView, sectionProvider: composedProvider)
     }
 
 }

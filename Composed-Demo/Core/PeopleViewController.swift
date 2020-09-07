@@ -4,21 +4,25 @@ import ComposedUI
 
 class PeopleViewController: UIViewController {
 
-    private(set) lazy var provider = PeopleComposedSectionProvider(controller: self)
+    private(set) lazy var composedProvider = ComposedSectionProvider()
+    private(set) lazy var peopleProvider = PeopleComposedSectionProvider(controller: self)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        composedProvider.append(peopleProvider)
+
         appendSection()
         appendSection()
         appendSection()
     }
 
     @IBAction func appendSection() {
-        provider.append()
+        peopleProvider.append()
     }
 
     @IBAction func removeSection() {
-        provider.currentIndex = provider.children.indices.randomElement() ?? 0
+        peopleProvider.currentIndex = peopleProvider.children.indices.randomElement() ?? 0
     }
 
 }

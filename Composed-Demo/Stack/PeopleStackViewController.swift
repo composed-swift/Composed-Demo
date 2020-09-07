@@ -12,7 +12,7 @@ final class PeopleStackViewController: PeopleViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        coordinator = StackCoordinator(composedView: composedView, sectionProvider: provider)
+        coordinator = StackCoordinator(composedView: composedView, sectionProvider: composedProvider)
         composedView.contentInsets.bottom = 20
     }
 

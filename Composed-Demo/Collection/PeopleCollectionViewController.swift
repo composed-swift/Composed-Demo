@@ -10,7 +10,7 @@ final class PeopleCollectionViewController: PeopleViewController, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: provider)
+        coordinator = CollectionCoordinator(collectionView: collectionView, sectionProvider: composedProvider)
         collectionView.delegate = self
     }
 
