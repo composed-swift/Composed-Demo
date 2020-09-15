@@ -9,6 +9,7 @@ class PeopleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         appendSection()
+        provider.append(ZeroHeightSection(parent: provider))
         appendSection()
         appendSection()
     }
@@ -18,7 +19,8 @@ class PeopleViewController: UIViewController {
     }
 
     @IBAction func removeSection() {
-        provider.currentIndex = provider.children.indices.randomElement() ?? 0
+        guard provider.numberOfSections > 0 else { return }
+        provider.remove(at: provider.numberOfSections - 1)
     }
 
 }

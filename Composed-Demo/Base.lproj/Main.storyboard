@@ -133,8 +133,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="3tW-ay-m4s" kind="relationship" relationship="viewControllers" id="Lhw-Oh-vB2"/>
                         <segue destination="R0X-vd-UVJ" kind="relationship" relationship="viewControllers" id="DGP-Tj-Zga"/>
+                        <segue destination="3tW-ay-m4s" kind="relationship" relationship="viewControllers" id="Lhw-Oh-vB2"/>
                         <segue destination="hfd-ya-oNV" kind="relationship" relationship="viewControllers" id="HsY-iI-Ssh"/>
                         <segue destination="6vT-8X-Phe" kind="relationship" relationship="viewControllers" id="Nrh-LX-Yni"/>
                     </connections>

@@ -33,10 +33,10 @@
 		54ECBD2024F5086A003E8D1F /* ComposedUI in Frameworks */ = {isa = PBXBuildFile; productRef = 54ECBD1F24F5086A003E8D1F /* ComposedUI */; };
 		54ECBD2324F50891003E8D1F /* ComposedLayouts in Frameworks */ = {isa = PBXBuildFile; productRef = 54ECBD2224F50891003E8D1F /* ComposedLayouts */; };
 		54F68E9B23109BC600C0319E /* PeopleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */; };
+		D9D0F3332511220F00C87146 /* ZeroHeightSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D0F3322511220F00C87146 /* ZeroHeightSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		541FD53124F520CD00D6C9ED /* Composed */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Composed; path = ../Composed; sourceTree = "<group>"; };
 		5429B19E24017BC100B7159B /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
 		5429B1A024017E1B00B7159B /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		5429B1A22401863100B7159B /* PersonCollectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionHeader.xib; sourceTree = "<group>"; };
@@ -51,12 +51,9 @@
 		542BD60E22E7A69B00CC9980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		542BD61022E7A69B00CC9980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		542BFEFF22E8963100ECFE9E /* PersonCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCollectionCell.xib; sourceTree = "<group>"; };
-		54518BB124F51C5B0014C162 /* ComposedLayouts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedLayouts; path = ../ComposedLayouts; sourceTree = "<group>"; };
-		54518BB224F51CC90014C162 /* ComposedMediaUI */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMediaUI; path = ../ComposedMediaUI; sourceTree = "<group>"; };
 		546568E32417F282003FEF70 /* PeopleStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleStackViewController.swift; sourceTree = "<group>"; };
 		5483B5B522E7C7C400E4BF34 /* PersonCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCollectionCell.swift; sourceTree = "<group>"; };
 		5483B5B922E7CCB800E4BF34 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		548D9C35242F975E0059E42B /* ComposedMedia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ComposedMedia; path = ../ComposedMedia; sourceTree = "<group>"; };
 		548FAB492418FF2D0092F29B /* PersonStackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonStackCell.swift; sourceTree = "<group>"; };
 		548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Stack.swift"; sourceTree = "<group>"; };
 		54BF82E022F1C5DB00D50991 /* PeopleSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleSection.swift; sourceTree = "<group>"; };
@@ -65,6 +62,7 @@
 		54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PeopleSection+Editing.swift"; sourceTree = "<group>"; };
 		54F68E9A23109BC600C0319E /* PeopleCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewController.swift; sourceTree = "<group>"; };
 		D92BA7F124EFE83A007366FD /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
+		D9D0F3322511220F00C87146 /* ZeroHeightSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroHeightSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				5483B5B922E7CCB800E4BF34 /* README.md */,
-				541FD53124F520CD00D6C9ED /* Composed */,
-				54518BB224F51CC90014C162 /* ComposedMediaUI */,
-				54518BB124F51C5B0014C162 /* ComposedLayouts */,
-				548D9C35242F975E0059E42B /* ComposedMedia */,
 				542BD60122E7A69A00CC9980 /* Composed-Demo */,
 				D92BA7F024EFE830007366FD /* Configurations */,
 				542BD60022E7A69A00CC9980 /* Products */,
@@ -146,6 +140,7 @@
 				54E7FA802417E0B000CB842B /* PeopleSection+Table.swift */,
 				548FAB4B24193BE90092F29B /* PeopleSection+Stack.swift */,
 				54E7FA822417E17900CB842B /* PeopleSection+Editing.swift */,
+				D9D0F3322511220F00C87146 /* ZeroHeightSection.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -278,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D0F3332511220F00C87146 /* ZeroHeightSection.swift in Sources */,
 				54BF82E122F1C5DB00D50991 /* PeopleSection.swift in Sources */,
 				548FAB4A2418FF2D0092F29B /* PersonStackCell.swift in Sources */,
 				546568E42417F282003FEF70 /* PeopleStackViewController.swift in Sources */,
@@ -438,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V2CWYL9AN8;
+				DEVELOPMENT_TEAM = T2ABQ5MBH8;
 				INFOPLIST_FILE = "Composed-Demo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
